@@ -3,7 +3,7 @@
 
 ## CIBORG
 
-CIBORG is a web application where users can manage groups containing their favorite board games.
+CIBORG is a web application where users can manage groups containing your favorite board games.
 ![Ciborg flow](https://i.imgur.com/lKa6TuM.png)
 
 ### Requirements
