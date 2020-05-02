@@ -1,0 +1,11 @@
+# ignore authentication text file
+Authentication.txt
+
+# ignore intellij files
+.idea
+*.iml
+out
+
+# ignore gradle
+.gradle
+build
