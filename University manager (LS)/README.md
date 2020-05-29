@@ -5,6 +5,10 @@ Software Laboratory, 2018/2019, Spring semester
 * 44015 Pedro Tereso
 * 43755 Luís Guerra
 * 43593 Wilson Costa
+
+### Link para app deployed -> https://isel-ls-1819-1-g17.herokuapp.com
+
+
 # Estrutura do Software
 
 ## Fase 1
