@@ -1,0 +1,490 @@
+{
+  "games": [
+    {
+      "id": "OIXt3DmJU0",
+      "name": "Catan",
+      "year_published": 1995,
+      "min_players": 3,
+      "max_players": 4,
+      "min_playtime": 45,
+      "max_playtime": 90,
+      "min_age": 10,
+      "description": "<p>The women and men of your expedition build the first two settlements. Fortunately, the land is rich in natural resources. You build roads and new settlements that eventually become cities. Will you succeed in gaining supremacy on Catan? Barter trade dominates the scene. Some resources you have in abundance, other resources are scarce. Ore for wool, brick for lumber - you trade according to what is needed for your current building projects. Proceed strategically! If you found your settlements in the right places and skillfully trade your resources, then the odds will be in your favor. But your opponents are smart too.</p>\r\n\r\n<p>To begin the game, we build the game board using hexagonal terrain tiles. Catan is born - a beautiful island with mountains, pastures, hills, fields, and forests, surrounded by the sea.</p>\r\n\r\n<p>Each of us places two small houses on spaces where three terrain hexes meet. They are our starting settlements.</p>\r\n\r\n<p>And so it begins. I roll two dice. An “11”! Each terrain hex is marked with a die roll number. Each player who owns a settlement adjacent to a terrain hex marked with the number rolled receives a resource produced by this hex. Hills produce brick, forests produce lumber, mountains produce ore, fields produce grain, and pastures produce wool.</p>\r\n\r\n<p>We use these resources to expand across Catan: we build roads and new settlements, or we upgrade our existing settlements to cities. For example, a road costs 1 brick and 1 lumber. If we do not have the necessary resources, we can acquire them by trading with our opponents.</p>\r\n\r\n<p>Each settlement is worth 1 victory point and each city is worth 2 victory points. If you expand cleverly, you may be the first player to reach 10 victory points and thus win the game!</p>",
+      "description_preview": " The women and men of your expedition build the first two settlements. Fortunately, the land is rich in natural resources. You build roads and new settlements that eventually become cities. Will you succeed in gaining supremacy on Catan? Barter trade dominates the scene. Some resources you have in abundance, other resources are scarce. Ore for wool, brick for lumber - you trade according to what is needed for your current building projects. Proceed strategically! If you found your settlements in the right places and skillfully trade your resources, then the odds will be in your favor. But your opponents are smart too. \r\n\r\n To begin the game, we build the game board using hexagonal terrain tiles. Catan is born - a beautiful island with mountains, pastures, hills, fields, and forests, surrounded by the sea. \r\n\r\n Each of us places two small houses on spaces where three terrain hexes meet. They are our starting settlements. \r\n\r\n And so it begins. I roll two dice. An “11”! Each terrain hex is marked with a die roll number. Each player who owns a settlement adjacent to a terrain hex marked with the number rolled receives a resource produced by this hex. Hills produce brick, forests produce lumber, mountains produce ore, fields produce grain, and pastures produce wool. \r\n\r\n We use these resources to expand across Catan: we build roads and new settlements, or we upgrade our existing settlements to cities. For example, a road costs 1 brick and 1 lumber. If we do not have the necessary resources, we can acquire them by trading with our opponents. \r\n\r\n Each settlement is worth 1 victory point and each city is worth 2 victory points. If you expand cleverly, you may be the first player to reach 10 victory points and thus win the game! ",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559258096678-51Eiofu9mqL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559258096678-51Eiofu9mqL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559258096678-51Eiofu9mqL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559258096678-51Eiofu9mqL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559258096678-51Eiofu9mqL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559258096678-51Eiofu9mqL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559258096678-51Eiofu9mqL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/OIXt3DmJU0/catan",
+      "price": "35.25",
+      "msrp": "49.00",
+      "discount": "0.28",
+      "primary_publisher": "Catan Studio",
+      "publishers": [
+        "Catan Studio",
+        "Kosmos (Germany)",
+        "Filosofia (France)",
+        "999 Games (Benelux)",
+        "Capcom (Japan)",
+        "Smart (Russia)",
+        "Κάισσα (Greece)",
+        "Devir (Brazil)",
+        "HaKubia (Israel)",
+        "Grow Jogos e Brinquedos (Brazil)",
+        "Galakta (Poland)",
+        "Albi (Czech republic and Slovakia)"
+      ],
+      "mechanics": [
+        {
+          "id": "R0bGq4cAl4"
+        },
+        {
+          "id": "c6gkRM7rSy"
+        },
+        {
+          "id": "AVY6EvSQTP"
+        }
+      ],
+      "categories": [
+        {
+          "id": "7rV11PKqME"
+        },
+        {
+          "id": "O0ogzwLUe8"
+        }
+      ],
+      "designers": [
+        "Klaus Teuber"
+      ],
+      "developers": [
+
+      ],
+      "artists": [
+        "Volkan Baga",
+        "Tanja Donner",
+        "Pete Fenlon",
+        "Jason Hawkins",
+        "Michaela Kienle",
+        "Harald Lieske",
+        "Michael Menzel",
+        "Marion Pott",
+        "Matt Schwabel",
+        "Franz Vohwinkel",
+        "Stephen Graham Walsh"
+      ],
+      "names": [
+        "Settlers of Catan",
+        "Settlers",
+        "trade build settle",
+        "Catan 5th Edition",
+        "Catan: 5th Edition",
+        "Die Siedler von Catan ",
+        "Catan - Das Spiel",
+        "Les Colons de Catane"
+      ],
+      "num_user_ratings": 444,
+      "average_user_rating": 2.9925263754097027,
+      "official_url": "https://www.catan.com/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://www.catan.com/game/catan#prof-easy",
+      "weight_amount": 2,
+      "weight_units": "lbs ",
+      "size_height": 11.6,
+      "size_width": 9.5,
+      "size_depth": 3,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [
+        {
+          "id": "Dxj6IrT1Rn"
+        }
+      ],
+      "reddit_all_time_count": 757,
+      "reddit_week_count": 2,
+      "reddit_day_count": 22,
+      "historical_low_price": 24.99,
+      "historical_low_date": {
+        "$date": "2019-12-07T18:14:01.946Z"
+      }
+    },
+    {
+      "id": "levMwXaCM6",
+      "name": "Monopoly Deal Card Game",
+      "year_published": 2008,
+      "min_players": 2,
+      "max_players": 5,
+      "min_playtime": 15,
+      "max_playtime": 30,
+      "min_age": 8,
+      "description": "Get a handy way to play the classic property-trading game! Be the first collect 3 full property sets of different colors, and you’ll win the Monopoly Deal Card Game. You’ll pick up cards when it's your turn and play Action cards to charge players rent, steal their cards or demand money for your birthday. Build up property sets, gather piles of money and keep wheeling and dealing until you're the Monopoly Deal winner! Monopoly and all related characters are trademarks of Hasbro.",
+      "description_preview": "Get a handy way to play the classic property-trading game! Be the first collect 3 full property sets of different colors, and you’ll win the Monopoly Deal Card Game. You’ll pick up cards when it's your turn and play Action cards to charge players rent, steal their cards or demand money for your birthday. Build up property sets, gather piles of money and keep wheeling and dealing until you're the Monopoly Deal winner! Monopoly and all related characters are trademarks of Hasbro.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559255820851-51PyKtxYE9L.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559255820851-51PyKtxYE9L.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559255820851-51PyKtxYE9L.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559255820851-51PyKtxYE9L.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559255820851-51PyKtxYE9L.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559255820851-51PyKtxYE9L.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559255820851-51PyKtxYE9L.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/levMwXaCM6/monopoly-deal-card-game",
+      "price": "7.99",
+      "msrp": "0.00",
+      "discount": "0.00",
+      "primary_publisher": "Hasbro",
+      "publishers": [
+        "Hasbro"
+      ],
+      "mechanics": [
+        {
+          "id": "ebJKldFVeS"
+        }
+      ],
+      "categories": [
+        {
+          "id": "7rV11PKqME"
+        },
+        {
+          "id": "X8J7RM6dxX"
+        },
+        {
+          "id": "O0ogzwLUe8"
+        }
+      ],
+      "designers": [
+
+      ],
+      "developers": [
+
+      ],
+      "artists": [
+
+      ],
+      "names": [
+        "Monopoly Deal",
+        "monopoly",
+        "card game",
+        "Monopoly Deal Card Game",
+        "Monopoly Deal",
+        "Monopoly Deal Card Game"
+      ],
+      "num_user_ratings": 73,
+      "average_user_rating": 2.767123287671233,
+      "matches_specs": null,
+      "spec": [
+
+      ],
+      "reddit_all_time_count": 43,
+      "reddit_week_count": 0,
+      "reddit_day_count": 0,
+      "historical_low_price": 3.99,
+      "historical_low_date": {
+        "$date": "2019-03-15T01:02:16.819Z"
+      }
+    },
+    {
+      "id": "ODBRHqGRvX",
+      "name": "Munchkin Deluxe",
+      "year_published": 2016,
+      "min_players": 3,
+      "max_players": 6,
+      "min_playtime": 60,
+      "max_playtime": 120,
+      "min_age": 10,
+      "description": "What makes this edition &quot;deluxe&quot;? It's got a big gameboard to keep your cards in place, and twelve player standies with plastic stands that you move on the gameboard as you level up!<br />\r\n<br />\r\nGo down in the dungeon. Kill everything you meet. Backstab your friends and steal their stuff. Grab the treasure and run.<br />\r\n<br />\r\nAdmit it. You love it.<br />\r\n<br />\r\nMunchkin is the mega-hit card game about dungeon adventure . . . with none of that stupid roleplaying stuff. You and your friends compete to kill monsters and grab magic items. And what magic items! Don the Horny Helmet and the Boots of Butt-Kicking. Wield the Staff of Napalm . . . or maybe the Chainsaw of Bloody Dismemberment. Start by slaughtering the Potted Plant and the Drooling Slime, and work your way up to the Plutonium Dragon . . .<br />\r\n<br />\r\nAnd it's illustrated (in full color!) by John Kovalic!<br />\r\n<br />\r\nFast-playing and silly, Munchkin can reduce any roleplaying group to hysteria. And, while they're laughing, you can steal their stuff.",
+      "description_preview": "What makes this edition \"deluxe\"? It's got a big gameboard to keep your cards in place, and twelve player standies with plastic stands that you move on the gameboard as you level up! \r\n \r\nGo down in the dungeon. Kill everything you meet. Backstab your friends and steal their stuff. Grab the treasure and run. \r\n \r\nAdmit it. You love it. \r\n \r\nMunchkin is the mega-hit card game about dungeon adventure . . . with none of that stupid roleplaying stuff. You and your friends compete to kill monsters and grab magic items. And what magic items! Don the Horny Helmet and the Boots of Butt-Kicking. Wield the Staff of Napalm . . . or maybe the Chainsaw of Bloody Dismemberment. Start by slaughtering the Potted Plant and the Drooling Slime, and work your way up to the Plutonium Dragon . . . \r\n \r\nAnd it's illustrated (in full color!) by John Kovalic! \r\n \r\nFast-playing and silly, Munchkin can reduce any roleplaying group to hysteria. And, while they're laughing, you can steal their stuff.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1544376668644",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1544376668644",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1544376668644",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1544376668644",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1544376668644",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1544376668644",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1544376668644"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/ODBRHqGRvX/munchkin-deluxe",
+      "price": "18.69",
+      "msrp": "29.99",
+      "discount": "0.38",
+      "primary_publisher": "Steve Jackson Games",
+      "publishers": [
+        "Steve Jackson Games"
+      ],
+      "mechanics": [
+        {
+          "id": "ebJKldFVeS"
+        },
+        {
+          "id": "kS8npG0jl8"
+        },
+        {
+          "id": "UHdPUeuqyZ"
+        },
+        {
+          "id": "BbTMRkwL0b"
+        },
+        {
+          "id": "hmipYN1R1I"
+        },
+        {
+          "id": "T8JEFYwoqy"
+        }
+      ],
+      "categories": [
+        {
+          "id": "7rV11PKqME"
+        },
+        {
+          "id": "nHZiDOXNla"
+        },
+        {
+          "id": "X8J7RM6dxX"
+        },
+        {
+          "id": "O0ogzwLUe8"
+        }
+      ],
+      "designers": [
+        "Steve Jackson"
+      ],
+      "developers": [
+
+      ],
+      "artists": [
+        "John Kovalic",
+        "Gabby Ruenes"
+      ],
+      "names": [
+        "Steve Jackson Games Munchkin Deluxe"
+      ],
+      "num_user_ratings": 3,
+      "average_user_rating": 2.6666666666666665,
+      "official_url": "http://www.worldofmunchkin.com/deluxe/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "http://www.worldofmunchkin.com/rules/deluxe_rules.pdf",
+      "matches_specs": null,
+      "spec": [
+
+      ],
+      "reddit_all_time_count": 3,
+      "reddit_week_count": 0,
+      "reddit_day_count": 0,
+      "historical_low_price": 18.1,
+      "historical_low_date": {
+        "$date": "2019-10-08T12:04:42.833Z"
+      }
+    },
+    {
+      "id": "pTn5yaHyYh",
+      "name": "Unicorn Rescue Society: The Card Game",
+      "year_published": 2019,
+      "min_players": 2,
+      "max_players": 8,
+      "min_playtime": 10,
+      "max_playtime": 30,
+      "min_age": 5,
+      "description": "<p>Across the world,\r\nlegendary creatures are losing their habitats. You and your friends are their\r\nonly hope of rescue. Return them to their homes!</p>",
+      "description_preview": " Across the world,\r\nlegendary creatures are losing their habitats. You and your friends are their\r\nonly hope of rescue. Return them to their homes! ",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1558046798963",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1558046798963",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1558046798963",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1558046798963",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1558046798963",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1558046798963",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1558046798963"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/pTn5yaHyYh/unicorn-rescue-society-the-card-game",
+      "price": "19.00",
+      "msrp": "19.00",
+      "discount": "0.00",
+      "primary_publisher": null,
+      "publishers": [
+        "Unicorn Rescue Society"
+      ],
+      "mechanics": [
+        {
+          "id": "ebJKldFVeS"
+        },
+        {
+          "id": "WPytek5P8l"
+        },
+        {
+          "id": "3dFd0RwsY4"
+        },
+        {
+          "id": "jCRze30VP1"
+        }
+      ],
+      "categories": [
+        {
+          "id": "MWoxgHrOJD"
+        },
+        {
+          "id": "eX8uuNlQkQ"
+        },
+        {
+          "id": "HKaYVNIxAJ"
+        },
+        {
+          "id": "B3NRLMK4xD"
+        },
+        {
+          "id": "gsekjrPJz0"
+        },
+        {
+          "id": "7rV11PKqME"
+        },
+        {
+          "id": "ZTneo8TaIO"
+        },
+        {
+          "id": "rrvd68LjOR"
+        },
+        {
+          "id": "MHkqIVxwtx"
+        },
+        {
+          "id": "dO9HVl2TW7"
+        },
+        {
+          "id": "X8J7RM6dxX"
+        },
+        {
+          "id": "O0ogzwLUe8"
+        }
+      ],
+      "designers": [
+        "Jesse Casey",
+        "Adam Gidwitz"
+      ],
+      "developers": [
+
+      ],
+      "artists": [
+        "Hatem Aly"
+      ],
+      "names": [
+
+      ],
+      "num_user_ratings": 1,
+      "average_user_rating": 5,
+      "official_url": "https://www.kickstarter.com/projects/jessecasey/unicorn-rescue-society-the-card-game?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "http://bit.ly/urs-game-rules",
+      "matches_specs": null,
+      "spec": [
+
+      ],
+      "reddit_all_time_count": 0,
+      "reddit_week_count": 0,
+      "reddit_day_count": 0,
+      "historical_low_price": 19,
+      "historical_low_date": {
+        "$date": "2019-01-05T08:00:00.000Z"
+      }
+    },
+    {
+      "id": "nLJkN6Nxt8",
+      "name": "NANO Corporation",
+      "year_published": 2017,
+      "min_players": 2,
+      "max_players": 4,
+      "min_playtime": 60,
+      "max_playtime": 120,
+      "min_age": 10,
+      "description": "<p>Economic strategy of a new format!</p><p>NANO Corporation is a Ukrainian economic game that immerses adults and children in the real world of market relations and interesting competition for productive assets, resources and nano-technologies.</p><p>NANO Corporation is the best economic game in Ukraine in 2018. More about this read in the article <a href=\"https://bombatgame.com/en/articles/news/kompaniya-bombat-game-poluchili-3-nagrady-na-konkurse-luchshaya-igrushka-2018\" target=\"_blank\">BOMBAT GAME HAS RECEIVED THREE AWARDS AT THE BEST TOY 2018 COMPETITION!</a></p><p><br /></p><p>Features of the game &quot;NANO Corporation&quot;:</p><ul><li>a game for a company of teenagers and for family leisure;</li><li>rules based on real economic laws;</li><li>the ability to adjust the complexity of the game due to the cost of labor;</li><li>interesting both for children (boys and girls), and for adults;</li><li>the influence of random factors is limited;</li><li>the possibility of implementing several economic development strategies</li></ul>",
+      "description_preview": " Economic strategy of a new format!  NANO Corporation is a Ukrainian economic game that immerses adults and children in the real world of market relations and interesting competition for productive assets, resources and nano-technologies.  NANO Corporation is the best economic game in Ukraine in 2018. More about this read in the article  BOMBAT GAME HAS RECEIVED THREE AWARDS AT THE BEST TOY 2018 COMPETITION!      Features of the game \"NANO Corporation\":   a game for a company of teenagers and for family leisure;  rules based on real economic laws;  the ability to adjust the complexity of the game due to the cost of labor;  interesting both for children (boys and girls), and for adults;  the influence of random factors is limited;  the possibility of implementing several economic development strategies  ",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1569856323112",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1569856323112",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1569856323112",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1569856323112",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1569856323112",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1569856323112",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1569856323112"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/nLJkN6Nxt8/nano-corporation",
+      "price": "0.00",
+      "msrp": "0.00",
+      "discount": "0.00",
+      "primary_publisher": null,
+      "publishers": [
+        "Bombat Game"
+      ],
+      "mechanics": [
+        {
+          "id": "UEzHyBWtz8"
+        },
+        {
+          "id": "ebJKldFVeS"
+        },
+        {
+          "id": "qu5BcGjAzk"
+        },
+        {
+          "id": "Rt6V388y6M"
+        },
+        {
+          "id": "jbLrZb1xIb"
+        },
+        {
+          "id": "AVY6EvSQTP"
+        },
+        {
+          "id": "fBOTEBUAmV"
+        }
+      ],
+      "categories": [
+        {
+          "id": "HKaYVNIxAJ"
+        },
+        {
+          "id": "N0TkEGfEsF"
+        },
+        {
+          "id": "B3NRLMK4xD"
+        },
+        {
+          "id": "h8wfZG0j3I"
+        },
+        {
+          "id": "7rV11PKqME"
+        },
+        {
+          "id": "zqFmdU4Fp2"
+        },
+        {
+          "id": "zyj9ZK3mHB"
+        },
+        {
+          "id": "O0ogzwLUe8"
+        }
+      ],
+      "designers": [
+        "Oleksandr Tykhenko"
+      ],
+      "developers": [
+
+      ],
+      "artists": [
+
+      ],
+      "names": [
+
+      ],
+      "num_user_ratings": 1,
+      "average_user_rating": 4,
+      "official_url": "https://bombatgame.com/en/for-janre/ekonomicheskie/nanokorporatsiya?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://bombatgame.com/files/pravila/Rules-Nanokorp-eng.pdf",
+      "matches_specs": null,
+      "spec": [
+
+      ],
+      "reddit_all_time_count": 0,
+      "reddit_week_count": 0
+    }
+  ]
+}

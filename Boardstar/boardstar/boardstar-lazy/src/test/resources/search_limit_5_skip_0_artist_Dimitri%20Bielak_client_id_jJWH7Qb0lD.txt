@@ -1,0 +1,447 @@
+{
+  "games": [
+    {
+      "id": "pPZnlKC4G3",
+      "name": "Inis",
+      "year_published": 2016,
+      "min_players": 2,
+      "max_players": 4,
+      "min_playtime": 60,
+      "max_playtime": 90,
+      "min_age": 14,
+      "description": "<div><p>The game's elegant mechanics combine card drafting and area control to produce a system rich in strategic options and interpersonal interactions.<br />At the same time, brilliantly crafted tiles give every game a unique, gradually unfolding geography. The gorgeous original art brings Ireland's ancient epics and audacious heroes to life.<br /></p><p><br />There are three different types of cards in <i>Inis</i>:<br />Action Cards - These are drafted each round and provide the base actions to deploy troops, move troops, attack, and play new regions.<br />Advantage Cards - These are acquired as a result of controlling certain regions. Each region has its own Advantage Card you receive as a result of having the most troops in it.<br />Epic Tales Cards - These unique and powerful cards evoke the Celtic gods and heroes to inspire the clans to accomplish legendary feats.</p></div>",
+      "description_preview": "  The game's elegant mechanics combine card drafting and area control to produce a system rich in strategic options and interpersonal interactions. At the same time, brilliantly crafted tiles give every game a unique, gradually unfolding geography. The gorgeous original art brings Ireland's ancient epics and audacious heroes to life.    There are three different types of cards in  Inis : Action Cards - These are drafted each round and provide the base actions to deploy troops, move troops, attack, and play new regions. Advantage Cards - These are acquired as a result of controlling certain regions. Each region has its own Advantage Card you receive as a result of having the most troops in it. Epic Tales Cards - These unique and powerful cards evoke the Celtic gods and heroes to inspire the clans to accomplish legendary feats.  ",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559255828707-61nsxy2BledL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559255828707-61nsxy2BledL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559255828707-61nsxy2BledL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559255828707-61nsxy2BledL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559255828707-61nsxy2BledL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559255828707-61nsxy2BledL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559255828707-61nsxy2BledL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/pPZnlKC4G3/inis",
+      "price": "52.05",
+      "msrp": "69.99",
+      "discount": "0.26",
+      "primary_publisher": "Asmodee Editions",
+      "publishers": [
+        "Asmodee Editions",
+        "Matagot",
+        "Gen-X Games",
+        "Hobby Japan",
+        "Lavka Games",
+        "Pegasus Spiele",
+        "Portal Games",
+        "Surfin' Meeple China"
+      ],
+      "mechanics": [
+        {
+          "id": "05zCZoLvQJ"
+        },
+        {
+          "id": "wV5peB05xs"
+        },
+        {
+          "id": "WPytek5P8l"
+        },
+        {
+          "id": "r6yIFvyXDD"
+        },
+        {
+          "id": "8PN2HE86wg"
+        }
+      ],
+      "categories": [
+        {
+          "id": "a8NM5cugJX"
+        },
+        {
+          "id": "eX8uuNlQkQ"
+        },
+        {
+          "id": "MHkqIVxwtx"
+        }
+      ],
+      "designers": [
+        " Christian Martinez"
+      ],
+      "developers": [
+
+      ],
+      "artists": [
+        "Dimitri Bielak",
+        "Jim Fitzpatrick"
+      ],
+      "names": [
+
+      ],
+      "num_user_ratings": 114,
+      "average_user_rating": 3.7613636363636362,
+      "official_url": "http://www.matagot.com/en/catalog/details/expert-games/1/inis/794#scrol?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "http://www.matagot.com/data/atasamente/INIS_RULES_EN.pdf",
+      "weight_amount": 4.72,
+      "weight_units": "lbs ",
+      "size_height": 10.9,
+      "size_width": 3.1,
+      "size_depth": 15.6,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [
+
+      ],
+      "reddit_all_time_count": 754,
+      "reddit_week_count": 3,
+      "reddit_day_count": 3,
+      "historical_low_price": 45.87,
+      "historical_low_date": {
+        "$date": "2019-07-16T10:01:07.520Z"
+      }
+    },
+    {
+      "id": "NYMPJIwU5Y",
+      "name": "Kemet",
+      "year_published": 2012,
+      "min_players": 2,
+      "max_players": 5,
+      "min_playtime": 90,
+      "max_playtime": 120,
+      "min_age": 10,
+      "description": "<p>Conquer Territory! Defeat Your Enemies! Appease the Gods! </p><p>In Kemet, players lead a tribe of ancient Egyptians as they strategically maneuver their troops to control the most territories and battle against their rivals. Draw upon the powers of the Egyptian gods and recruit mythical creatures to reinforce your armies and vanquish those who oppose you and your ambitions!</p>",
+      "description_preview": " Conquer Territory! Defeat Your Enemies! Appease the Gods!   In Kemet, players lead a tribe of ancient Egyptians as they strategically maneuver their troops to control the most territories and battle against their rivals. Draw upon the powers of the Egyptian gods and recruit mythical creatures to reinforce your armies and vanquish those who oppose you and your ambitions! ",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1539298062211",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1539298062211",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1539298062211",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1539298062211",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1539298062211",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1539298062211",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1539298062211"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/NYMPJIwU5Y/kemet",
+      "price": "45.70",
+      "msrp": "69.99",
+      "discount": "0.35",
+      "primary_publisher": "Publisher Services Inc (PSI)",
+      "publishers": [
+        "Matagot"
+      ],
+      "mechanics": [
+        {
+          "id": "05zCZoLvQJ"
+        },
+        {
+          "id": "wV5peB05xs"
+        },
+        {
+          "id": "WPytek5P8l"
+        }
+      ],
+      "categories": [
+        {
+          "id": "upXZ8vNfNO"
+        },
+        {
+          "id": "MHkqIVxwtx"
+        }
+      ],
+      "designers": [
+        "Jacques Bariot",
+        "Guillaume Montiage"
+      ],
+      "developers": [
+
+      ],
+      "artists": [
+        "Dimitri Bielak",
+        "Emile Denis",
+        "Nicolas Fructus"
+      ],
+      "names": [
+
+      ],
+      "num_user_ratings": 117,
+      "average_user_rating": 3.5555555555555567,
+      "official_url": "http://drafts.asmodee.us/en/games/kemet/products/kemet/?utm_source=boardgameatlas.com&utm_medium=search&utm_campaign=bga_ads",
+      "rules_url": "https://www.matagot.com/data/atasamente/ReglesKemet_EN.pdf",
+      "weight_amount": 4.1,
+      "weight_units": "lbs ",
+      "size_height": 10.8,
+      "size_width": 3.1,
+      "size_depth": 15.6,
+      "size_units": "inches ",
+      "matches_specs": null,
+      "spec": [
+
+      ],
+      "reddit_all_time_count": 527,
+      "reddit_week_count": 1,
+      "reddit_day_count": 1,
+      "historical_low_price": 45.7,
+      "historical_low_date": {
+        "$date": "2020-01-30T10:03:47.131Z"
+      }
+    },
+    {
+      "id": "mcGfUyWss2",
+      "name": "Kemet: Ta-Seti",
+      "year_published": 2015,
+      "min_players": 2,
+      "max_players": 5,
+      "min_playtime": 90,
+      "max_playtime": 120,
+      "min_age": 10,
+      "description": "Conquer Territory! Defeat Your Enemies! Appease the Gods! In Kemet, players lead a tribe of ancient Egyptians as they strategically maneuver their troops to control the most territories and battle against their rivals. Draw upon the powers of the Egyptian gods and recruit mythical creatures to reinforce your armies and vanquish those who oppose you and your ambitions!",
+      "description_preview": "Conquer Territory! Defeat Your Enemies! Appease the Gods! In Kemet, players lead a tribe of ancient Egyptians as they strategically maneuver their troops to control the most territories and battle against their rivals. Draw upon the powers of the Egyptian gods and recruit mythical creatures to reinforce your armies and vanquish those who oppose you and your ambitions!",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254194904-51s6Iv2B5L8L.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254194904-51s6Iv2B5L8L.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254194904-51s6Iv2B5L8L.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254194904-51s6Iv2B5L8L.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254194904-51s6Iv2B5L8L.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254194904-51s6Iv2B5L8L.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254194904-51s6Iv2B5L8L.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/mcGfUyWss2/kemet-taseti",
+      "price": "39.99",
+      "msrp": "50.00",
+      "discount": "0.20",
+      "primary_publisher": "Matagot",
+      "publishers": [
+        "Matagot"
+      ],
+      "mechanics": [
+
+      ],
+      "categories": [
+
+      ],
+      "designers": [
+        "Jacques Bariot",
+        "Guillaume Montiage"
+      ],
+      "developers": [
+
+      ],
+      "artists": [
+        "Dimitri Bielak",
+        "Emile Denis",
+        "Nicolas Fructus"
+      ],
+      "names": [
+
+      ],
+      "num_user_ratings": 11,
+      "average_user_rating": 3.4000000000000004,
+      "official_url": null,
+      "rules_url": null,
+      "weight_amount": 2.43,
+      "size_height": 34.8,
+      "size_width": 23.9,
+      "size_depth": 5.8,
+      "size_units": "cm",
+      "matches_specs": null,
+      "spec": [
+
+      ],
+      "reddit_all_time_count": 12,
+      "reddit_week_count": 0,
+      "reddit_day_count": 0,
+      "historical_low_price": 26.36,
+      "historical_low_date": {
+        "$date": "2019-09-04T16:03:07.956Z"
+      }
+    },
+    {
+      "id": "OfWw8QJLON",
+      "name": "Relic",
+      "year_published": 2013,
+      "min_players": 2,
+      "max_players": 4,
+      "min_playtime": 180,
+      "max_playtime": 180,
+      "min_age": 14,
+      "description": "A Warp rift has erupted near the Antian Sector and under its baleful influence Chaos infestations and other abhorrent phenomena have surfaced. To face this threat, agents of the Imperium have come forth: Space Marine, Inquisitor, Commissar, Rogue Trader and more. To succeed, such heroes will need skill and weaponry, courage and faith and even the assistance of ancient and powerful relics. Relic is an adventure board game based on the Talisman system, in which two to four players each assume the role of a powerful hero from the Warhammer 40,000 universe and bravely venture forth to shield the Antian Sector from certain doom. By completing missions and defeating enemies, characters compete to gain rewards and experience, furthering their chance of being the first to defeat whatever evil lies beyond the Warp rift.",
+      "description_preview": "A Warp rift has erupted near the Antian Sector and under its baleful influence Chaos infestations and other abhorrent phenomena have surfaced. To face this threat, agents of the Imperium have come forth: Space Marine, Inquisitor, Commissar, Rogue Trader and more. To succeed, such heroes will need skill and weaponry, courage and faith and even the assistance of ancient and powerful relics. Relic is an adventure board game based on the Talisman system, in which two to four players each assume the role of a powerful hero from the Warhammer 40,000 universe and bravely venture forth to shield the Antian Sector from certain doom. By completing missions and defeating enemies, characters compete to gain rewards and experience, furthering their chance of being the first to defeat whatever evil lies beyond the Warp rift.",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254768508-61X-3uyERfL.jpg",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254768508-61X-3uyERfL.jpg",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1559254768508-61X-3uyERfL.jpg",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1559254768508-61X-3uyERfL.jpg",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1559254768508-61X-3uyERfL.jpg",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1559254768508-61X-3uyERfL.jpg",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1559254768508-61X-3uyERfL.jpg"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/OfWw8QJLON/relic",
+      "price": "109.99",
+      "msrp": "0.00",
+      "discount": "0.00",
+      "primary_publisher": "Fantasy Flight Publishing",
+      "publishers": [
+        "Fantasy Flight Publishing"
+      ],
+      "mechanics": [
+        {
+          "id": "R0bGq4cAl4"
+        },
+        {
+          "id": "mGBzR68m8Z"
+        },
+        {
+          "id": "XM2FYZmBHH"
+        }
+      ],
+      "categories": [
+        {
+          "id": "KUBCKBkGxV"
+        },
+        {
+          "id": "yq6hVlbM2R"
+        },
+        {
+          "id": "3B3QpKvXD3"
+        },
+        {
+          "id": "0MdRqhkNpw"
+        }
+      ],
+      "designers": [
+        "John Goodenough"
+      ],
+      "developers": [
+
+      ],
+      "artists": [
+        "Ryan Barger",
+        "Dimitri Bielak",
+        "John Blanche",
+        "Matt Bradbury"
+      ],
+      "names": [
+        "Fantasy Flight Games Relic: The",
+        "Relic"
+      ],
+      "num_user_ratings": 12,
+      "average_user_rating": 2.9999999999999996,
+      "official_url": null,
+      "rules_url": null,
+      "matches_specs": null,
+      "spec": [
+
+      ],
+      "reddit_all_time_count": 3,
+      "reddit_week_count": 0,
+      "reddit_day_count": 0,
+      "historical_low_price": 97.99,
+      "historical_low_date": {
+        "$date": "2019-08-08T10:01:58.662Z"
+      }
+    },
+    {
+      "id": "5p2ywjQMI6",
+      "name": "The Gathering Storm",
+      "year_published": 2010,
+      "min_players": null,
+      "max_players": null,
+      "min_playtime": null,
+      "max_playtime": null,
+      "min_age": null,
+      "description": "",
+      "description_preview": "",
+      "image_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1576641003402",
+      "thumb_url": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1576641003402",
+      "images": {
+        "thumb": "https://d2k4q26owzy373.cloudfront.net/40x40/games/uploaded/1576641003402",
+        "small": "https://d2k4q26owzy373.cloudfront.net/150x150/games/uploaded/1576641003402",
+        "medium": "https://d2k4q26owzy373.cloudfront.net/350x350/games/uploaded/1576641003402",
+        "large": "https://d2k4q26owzy373.cloudfront.net/700x700/games/uploaded/1576641003402",
+        "original": "https://s3-us-west-1.amazonaws.com/5cc.images/games/uploaded/1576641003402"
+      },
+      "url": "https://www.boardgameatlas.com/search/game/5p2ywjQMI6/the-gathering-storm",
+      "price": "0.00",
+      "msrp": "0.00",
+      "discount": "0.00",
+      "primary_publisher": null,
+      "publishers": [
+        "Edge Entertainment",
+        "Fantasy Flight Games",
+        "Heidelberger Spieleverlag"
+      ],
+      "mechanics": [
+
+      ],
+      "categories": [
+
+      ],
+      "designers": [
+        "Dave Allen",
+        "Daniel Clark (I)",
+        "Steve Darlington",
+        "Michael Hurley",
+        "Jason Little",
+        "Gary McBride",
+        "Clive Oldfield",
+        "Dylan Owen",
+        "Tim Uren",
+        "Show More »"
+      ],
+      "developers": [
+
+      ],
+      "artists": [
+        "Alex Aparin",
+        "Tim Arney-O'Neil",
+        "Erfian Asafat",
+        "Ryan Barger",
+        "Dimitri Bielak",
+        "John Blanche",
+        "Alex Boyd",
+        "James Brady",
+        "Jason Caffoe",
+        "Trevor Cook",
+        "Daarken",
+        "Paul Dainton",
+        "Fergus Duggan",
+        "Wayne England",
+        "Loren Fetterman",
+        "John Gravato",
+        "David Griffith",
+        "Ilich Henriquez",
+        "Michal Ivan",
+        "Peter Johnston",
+        "Igor Kieryluk",
+        "Karl Kopinski",
+        "Clint Langley",
+        "Pat Loboyko",
+        "Jorge Maese",
+        "Luke Mancini",
+        "Nacho Molina",
+        "Mark Molnar",
+        "Chris Pritchard",
+        "Brad Rigney",
+        "Adrian Smith",
+        "Mark E. Smith",
+        "Geoff Taylor",
+        "Christopher Trevas",
+        "Frank Walls",
+        "Dan Wheaton",
+        "Joe Wilson",
+        "Liu Yang",
+        "Show More »"
+      ],
+      "names": [
+
+      ],
+      "num_user_ratings": 0,
+      "official_url": null,
+      "rules_url": null,
+      "matches_specs": null,
+      "spec": [
+
+      ],
+      "reddit_all_time_count": 2,
+      "reddit_week_count": 0,
+      "reddit_day_count": 1
+    }
+  ]
+}
