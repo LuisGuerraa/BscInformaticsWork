@@ -1,4 +1,4 @@
-# This folder contains a project developed for Design Patterns (Java) Course 
+#Project developed for Design Patterns (Java) Course 
 
 ## Introduction
 
