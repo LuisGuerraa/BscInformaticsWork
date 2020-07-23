@@ -6,9 +6,7 @@
 * Repository for developing a project for DAW course 
 
 ### Documentation 
-* [API Documentation](https://github.com/isel-leic-daw/S1920V-LI61N-G03/blob/master/docs/API_Documentation.pdf)
-
-* [Json Home of the API](https://github.com/isel-leic-daw/S1920V-LI61N-G03/wiki/API-Json-Home-Documentation)
+* [API Documentation](https://github.com/LuisGuerraa/StolenWorkOfCourse/tree/master/Projects%20Manager/docs/API_Documentation.pdf)
 
 ### Architecture
 
