@@ -18,7 +18,7 @@
 # Building and Running the App
 
 - `run bat file of Elastic Search named "elasticsearch.bat"`
-- `git clone https://github.com/LuisGuerraa/StolenWorkOfCourse
+- `git clone https://github.com/LuisGuerraa/StolenWorkOfCourse`
 - `cd COTA`
 - `cd client`
 - `npm install`
