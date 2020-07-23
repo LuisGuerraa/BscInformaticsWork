@@ -1,0 +1,10 @@
+DROP TABLE issue_issuelabel;
+DROP TABLE issuecomment;
+DROP TABLE project_issuelabel;
+DROP TABLE transition;
+DROP TABLE issue;
+DROP TABLE contributor;
+DROP TABLE apiuser;
+DROP TABLE project;
+DROP TYPE issuelabel;
+DROP TYPE issuestate;

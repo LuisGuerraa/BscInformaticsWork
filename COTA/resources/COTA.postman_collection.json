@@ -1,0 +1,600 @@
+{
+	"info": {
+		"_postman_id": "2fa9b45f-e51c-4706-af0d-a06b7dc44718",
+		"name": "PI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "COTA",
+			"item": [
+				{
+					"name": "Users",
+					"item": [
+						{
+							"name": "Sign In",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"Tiago\",\r\n    \"password\": \"slb\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/users/signin",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"signin"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Sign Up",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"Rui\",\r\n    \"password\": \"slb\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/users/signup",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"signup"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Logout",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"username\": \"Tiago\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/users/logout",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"logout"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Current user",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/users/current",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"users",
+										"current"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Groups",
+					"item": [
+						{
+							"name": "All public groups",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/groups/public",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"groups",
+										"public"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET Groups",
+							"protocolProfileBehavior": {
+								"followRedirects": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "localhost:8080/groups",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"groups"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "POST Group",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\" : \"Andreia\",\n\t\"desc\" : \"descricao muito bom\",\n\t\"visibility\" : \"private\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/groups",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"groups"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET GroupByName",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/groups/Tiago",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"groups",
+										"Tiago"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PUT Group (Update)",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\" : \"TiagoPostUpdate\",\n\t\"desc\" : \"descricao muito boa\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/groups/Tiago",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"groups",
+										"Tiago"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Shared Groups",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/groups/shared",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"groups",
+										"shared"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Series",
+					"item": [
+						{
+							"name": "Get MostPopular",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/series/popular/1",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"series",
+										"popular",
+										"1"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get SeriesByName",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/series/Homeland",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"series",
+										"Homeland"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PUT SeriesInGroup",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"series\": \"House\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8080/groups/Tiago/series",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"groups",
+										"Tiago",
+										"series"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE SeriesInGroup",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/groups/Tiago/series/House",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"groups",
+										"Tiago",
+										"series",
+										"House"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GetSeriesBetweenInterval",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8080/groups/Tiago/series/6&7",
+									"host": [
+										"localhost"
+									],
+									"port": "8080",
+									"path": [
+										"groups",
+										"Tiago",
+										"series",
+										"6&7"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "ElasticSearch",
+			"item": [
+				{
+					"name": "Groups",
+					"item": [
+						{
+							"name": "GET GroupByName",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:9200/groups/_search?q=(owner:Tiago)AND(name:ola%20boa%20tarde)",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"groups",
+										"_search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "(owner:Tiago)AND(name:ola%20boa%20tarde)"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "GET AllGroup",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:9200/groups/_search",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"groups",
+										"_search"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "DELETE AllGroups",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"query\": {\n        \"match_all\": {}\n    }\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:9200/groups/_doc/_delete_by_query",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"groups",
+										"_doc",
+										"_delete_by_query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "PostGroup",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"name\": \"Tiago\",\r\n\t\"desc\": \"descricao muito boa\",\r\n\t\"series\": []\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:9200/groups/_doc",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"groups",
+										"_doc"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "UpdateGroup",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n\t\"query\": {\r\n\t\t\"match\": {\r\n\t\t\t\"name\": \"Tiago\"\r\n\t\t}\r\n\t},\r\n\"script\": {\r\n                \"source\": \"ctx._source.name = params.name; ctx._source.desc = params.desc\",\r\n                \"params\":{\r\n                    \"name\" : \"TiagoPostUpdate\",\r\n                    \"desc\" : \"TiagoPostUpdate\"\r\n                }\r\n            }\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:9200/groups/_doc/_update_by_query",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"groups",
+										"_doc",
+										"_update_by_query"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Groups By Owner",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:9200/groups/_search?q=owner:Tiago",
+									"host": [
+										"localhost"
+									],
+									"port": "9200",
+									"path": [
+										"groups",
+										"_search"
+									],
+									"query": [
+										{
+											"key": "q",
+											"value": "owner:Tiago"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "User",
+					"item": [
+						{
+							"name": "Get All Users",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

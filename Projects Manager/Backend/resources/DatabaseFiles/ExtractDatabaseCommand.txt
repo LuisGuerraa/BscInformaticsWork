@@ -1,0 +1,1 @@
+pg_dump -U postgres -h localhost daw_g03 >> daw_database.sql

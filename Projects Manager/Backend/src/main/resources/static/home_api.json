@@ -1,0 +1,303 @@
+{
+  "api": {
+    "title": "DAW Project API"
+  },
+  "resources": {
+    "/rels/users": {
+      "href": "/users",
+      "hints": {
+        "allow": [
+          "POST"
+        ],
+        "formats": {},
+        "acceptPost": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/user/": {
+      "hrefTemplate": "users/{uid}",
+      "hrefVars": {
+        "uid": "params/uid"
+      },
+      "hints": {
+        "allow": [
+          "DELETE"
+        ],
+        "formats": {},
+        "acceptPatch": [
+          "application/json-patch+json"
+        ]
+      }
+    },
+    "/rels/projects": {
+      "href": "/projects",
+      "hints": {
+        "allow": [
+          "GET",
+          "POST"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPost": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/project": {
+      "hrefTemplate": "/projects/{pname}",
+      "hrefVars": {
+        "pname": "/params/pname"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPut": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/project/name": {
+      "hrefTemplate": "projects/{pname}/name",
+      "hrefVars": {
+        "pname": "params/pname"
+      },
+      "hints": {
+        "allow": [
+          "PATCH"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPatch": [
+          "application/json-patch+json"
+        ]
+      }
+    },
+    "/rels/project/description": {
+      "hrefTemplate": "projects/{pname}/description",
+      "hrefVars": {
+        "pname": "params/pname"
+      },
+      "hints": {
+        "allow": [
+          "PATCH"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPatch": [
+          "application/json-patch+json"
+        ]
+      }
+    },
+    "/rels/project/contributors": {
+      "hrefTemplate": "/projects/{pname}/contributors",
+      "hrefVars": {
+        "pname": "/params/pname"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "POST"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPost": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/project/contributor": {
+      "hrefTemplate": "/projects/{pname}/contributors/{username}",
+      "hrefVars": {
+        "pname": "/params/pname",
+        "username": "/params/username"
+      },
+      "hints": {
+        "allow": [
+          "DELETE",
+          "GET"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPost": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/project/issues": {
+      "hrefTemplate": "/projects/{pname}/issues",
+      "hrefVars": {
+        "pname": "/params/pname"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "POST"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPost": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/project/issue": {
+      "hrefTemplate": "/projects/{pname}/issues/{iid}",
+      "hrefVars": {
+        "pname": "/params/pname",
+        "iid": "/params/iid"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPut": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/project/issue/name": {
+      "hrefTemplate": "projects/{pname}/issues/{iid}/name",
+      "hrefVars": {
+        "pname": "params/pname",
+        "iid": "params/iid"
+      },
+      "hints": {
+        "allow": [
+          "PATCH"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPatch": [
+          "application/json-patch+json"
+        ]
+      }
+    },
+    "/rels/project/issue/description": {
+      "hrefTemplate": "projects/{pname}/issues/{iid}/description",
+      "hrefVars": {
+        "pname": "params/pname",
+        "iid": "params/iid"
+      },
+      "hints": {
+        "allow": [
+          "PATCH"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPatch": [
+          "application/json-patch+json"
+        ]
+      }
+    },
+    "/rels/project/issue/state": {
+      "hrefTemplate": "projects/{pname}/issues/{iid}/state",
+      "hrefVars": {
+        "pname": "params/pname",
+        "iid": "params/iid"
+      },
+      "hints": {
+        "allow": [
+          "PATCH"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPatch": [
+          "application/json-patch+json"
+        ]
+      }
+    },
+    "/rels/project/issue/closeDate": {
+      "hrefTemplate": "projects/{pname}/issues/{iid}/closeDate",
+      "hrefVars": {
+        "pname": "params/pname",
+        "iid": "params/iid"
+      },
+      "hints": {
+        "allow": [
+          "PATCH"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPatch": [
+          "application/json-patch+json"
+        ]
+      }
+    },
+    "/rels/project/issue/comments": {
+      "hrefTemplate": "/projects/{pname}/issues/{iid}/comments",
+      "hrefVars": {
+        "pname": "/params/pname",
+        "iid": "/params/iid"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "POST"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPost": [
+          "application/json"
+        ]
+      }
+    },
+    "/rels/project/issue/comment": {
+      "hrefTemplate": "/projects/{pname}/issues/{iid}/comments/{cid}",
+      "hrefVars": {
+        "pname": "/params/pname",
+        "iid": "/params/iid",
+        "cid": "/params/cid"
+      },
+      "hints": {
+        "allow": [
+          "GET",
+          "PUT",
+          "DELETE"
+        ],
+        "formats": {
+          "application/json": {},
+          "application/vnd.siren+json": {}
+        },
+        "acceptPost": [
+          "application/json"
+        ]
+      }
+    }
+  }
+}

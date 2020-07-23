@@ -1,0 +1,93 @@
+.navbar {
+    display: flex;
+}
+
+.navigation {
+    flex: 3;
+}
+
+#userInfo {
+    flex: 1;
+}
+
+.userInfo {
+    float: right;
+}
+
+.navButtons {
+    text-align: center;
+}
+
+.navitem {
+    display: inline-block;
+    margin: 20px;
+}
+
+.featuresIcon {
+    text-align: center;
+    font-size: 4em;
+    margin: 5% auto;
+}
+
+.homeItems {
+    text-align: center;
+}
+
+h1 img {
+    display: block;
+    margin-bottom: 20px;
+    height: 80px;
+    vertical-align: after-edge;
+}
+
+h1 {
+    text-align: center;
+    padding-bottom: 25px;
+    padding-top: 15px;
+}
+
+.homeImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 80px;
+}
+
+input {
+    margin: 5px;
+}
+
+.cardList {
+    margin: 30px;
+}
+
+.btn-circle.btn-sm {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0;
+    border-radius: 15px;
+    font-size: 8px;
+    text-align: center;
+}
+
+.footerIcon {
+    text-align: center;
+    font-size: 2em;
+    margin: 5% auto;
+}
+
+.footerItem {
+    margin: 10px 10px 20px;
+}
+
+.alertDiv {
+    position: fixed;
+    text-align: center;
+    right: 0;
+    top: 0;
+}
+
+a.custom-card,
+a.custom-card:hover {
+    color: inherit;
+}

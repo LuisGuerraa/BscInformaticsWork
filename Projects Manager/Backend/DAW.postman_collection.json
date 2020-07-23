@@ -1,0 +1,1055 @@
+{
+	"info": {
+		"_postman_id": "4adae05c-f877-4fa7-b83b-6404c7ba71bf",
+		"name": "DAW",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Post User",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\" : \"davidwilsonluis\",\n\t\"password\" : \"isel\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/users",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/users/davidwilsonluis",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"users",
+								"davidwilsonluis"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"username\" : \"davidwilsonluis\",\n\t\"password\" : \"isel\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/users/login",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"users",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Projects",
+			"item": [
+				{
+					"name": "Contributor",
+					"item": [
+						{
+							"name": "Insert Contributor in Project",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "davidwilsonluis",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "isel",
+											"type": "string"
+										}
+									]
+								},
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"username\" : \"david\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/projects/Grupo 3/contributors",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"projects",
+										"Grupo 3",
+										"contributors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Project Contributors",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/vnd.siren+json",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/projects/Grupo 3/contributors",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"projects",
+										"Grupo 3",
+										"contributors"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Get Project Contributor",
+							"protocolProfileBehavior": {
+								"disabledSystemHeaders": {}
+							},
+							"request": {
+								"auth": {
+									"type": "noauth"
+								},
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept",
+										"type": "text",
+										"value": "application/vnd.siren+json"
+									}
+								],
+								"url": {
+									"raw": "localhost:8000/projects/Grupo 3/contributors/davidwilsonluis",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"projects",
+										"Grupo 3",
+										"contributors",
+										"davidwilsonluis"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Remove Contributor From Project",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "davidwilsonluis",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "isel",
+											"type": "string"
+										}
+									]
+								},
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/projects/Grupo 3/contributors/david",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"projects",
+										"Grupo 3",
+										"contributors",
+										"david"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Path Requests",
+					"item": [
+						{
+							"name": "Patch Project Name",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "davidwilsonluis",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "isel",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/vnd.siren+json",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"name\" : \"Grupo 3\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/projects/Grupo 3/name",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"projects",
+										"Grupo 3",
+										"name"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Patch Project Description",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "davidwilsonluis",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "isel",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"description\" : \"nova descrição patch\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/projects/Grupo 3/description",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"projects",
+										"Grupo 3",
+										"description"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "Insert Project",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "davidwilsonluis",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "isel",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"Grupo 3\",\n\t\"description\" : \"Projecto do grupo 3\",\n\t\"issueStates\" : [\"open\", \"closed\", \"archived\"],\n\t\"issueLabels\" : [\"new_functionality\", \"defect\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/projects",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Projects",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.siren+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/projects",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Project Details",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {
+							"accept": true
+						}
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/vnd.siren+json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/projects/Grupo 3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects",
+								"Grupo 3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Project",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "davidwilsonluis",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "isel",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"Grupo 3\",\n\t\"description\" : \"new description\",\n\t\"issueLabels\": [\"exploration\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/projects/Grupo 3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects",
+								"Grupo 3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Project",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "davidwilsonluis",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "isel",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/projects/Grupo 3",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects",
+								"Grupo 3"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Issues",
+			"item": [
+				{
+					"name": "Patch Requests",
+					"item": [
+						{
+							"name": "Patch Issue Name",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "davidwilsonluis",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "isel",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"newName\" : \"new name 5 patch\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/projects/Grupo 3/issues/5/name",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"projects",
+										"Grupo 3",
+										"issues",
+										"5",
+										"name"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Patch Issue Description",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "davidwilsonluis",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "isel",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"description\" : \"wpeinvwpiv\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/projects/Grupo 3/issues/2/description",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"projects",
+										"Grupo 3",
+										"issues",
+										"2",
+										"description"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Patch Issue State",
+							"request": {
+								"auth": {
+									"type": "basic",
+									"basic": [
+										{
+											"key": "username",
+											"value": "davidwilsonluis",
+											"type": "string"
+										},
+										{
+											"key": "password",
+											"value": "isel",
+											"type": "string"
+										}
+									]
+								},
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n\t\"nextState\" : \"open\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/projects/Grupo 3/issues/5/state",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"projects",
+										"Grupo 3",
+										"issues",
+										"5",
+										"state"
+									]
+								}
+							},
+							"response": []
+						}
+					],
+					"protocolProfileBehavior": {},
+					"_postman_isSubFolder": true
+				},
+				{
+					"name": "PostProjectIssue",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "davidwilsonluis",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "isel",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"new issue\",\n\t\"description\" : \"new description\",\n\t\"labelType\" : [ \"new_functionality\", \"defect\" ]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/projects/Grupo 3/issues",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects",
+								"Grupo 3",
+								"issues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetProjectIssues",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/projects/Grupo 3/issues",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects",
+								"Grupo 3",
+								"issues"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Issue Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/projects/Grupo 3/issues/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects",
+								"Grupo 3",
+								"issues",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Project Issue",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "davidwilsonluis",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "isel",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\" : \"new name 5 patch\",\n\t\"description\" : \"new description\",\n\t\"labelType\": [\"new_functionality\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/projects/Grupo 3/issues/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects",
+								"Grupo 3",
+								"issues",
+								"5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Issue",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "davidwilsonluis",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "isel",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/projects/Grupo 3/issues/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects",
+								"Grupo 3",
+								"issues",
+								"5"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Comments",
+			"item": [
+				{
+					"name": "Post Issue Comment",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "davidwilsonluis",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "isel",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"text\" : \"issue comment text\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/projects/Grupo 3/issues/7/comments",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects",
+								"Grupo 3",
+								"issues",
+								"7",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Issue Comments",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/projects/Grupo 3/issues/7/comments",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects",
+								"Grupo 3",
+								"issues",
+								"7",
+								"comments"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Issue Comment Details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/projects/Grupo 3/issues/7/comments/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects",
+								"Grupo 3",
+								"issues",
+								"7",
+								"comments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Issue Comment",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "davidwilsonluis",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "isel",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"text\" : \"updated comment text\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/projects/Grupo 3/issues/7/comments/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects",
+								"Grupo 3",
+								"issues",
+								"7",
+								"comments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Issue Comment",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "username",
+									"value": "davidwilsonluis",
+									"type": "string"
+								},
+								{
+									"key": "password",
+									"value": "isel",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/projects/Grupo 3/issues/7/comments/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"projects",
+								"Grupo 3",
+								"issues",
+								"7",
+								"comments",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "HOME",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.siren+json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
