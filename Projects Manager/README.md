@@ -1,9 +1,7 @@
 # Project Issue Management 
 
 ### About 
-* DAW-LI61N - Group 03
-* 2019-2020 Summer Semester
-* Repository for developing a project for DAW course 
+This project has the objetive to help people to manage their project like an organizer.
 
 ### Documentation 
 * [API Documentation](https://github.com/LuisGuerraa/StolenWorkOfCourse/tree/master/Projects%20Manager/docs/API_Documentation.pdf)
