@@ -1,10 +1,8 @@
-# PI-1920v-L51D-G10
-
-## Repository for developing app COTA for PI course
+This project has the objetive giving the user a pleasent way to search and manage groups of their favourite series.
 
 ### Students :
 
-* Tiago Pereira - 43592
+* [Tiago Pereira](https://github.com/TiagoPereira06) - 43592
 * Luis Guerra - 43755
 
 # API Architecture Diagram
