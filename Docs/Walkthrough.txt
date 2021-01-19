@@ -1,1 +1,6 @@
-java local -> java w/ web interaction -> java w/ web interaction , design patterns -> javascript (backend+frontend) -> kotlin + Spring (backend) + javascript + React(frontend)
+java local ->
+java w/ web interaction ->
+java w/ web interaction , design patternsb ->
+javascript (backend+frontend)-> 
+kotlin + Spring (backend) + javascript + React(frontend) ->
+android framework wth Kotlin
