@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "932750349346",
+    "project_id": "pdm-2021i-li51n-g02",
+    "storage_bucket": "pdm-2021i-li51n-g02.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932750349346:android:906ad95096102d0513e67b",
+        "android_client_info": {
+          "package_name": "com.example.drag"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932750349346-fehks1cc9qs4u3l5dp79fu8ck0eubea7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADr-Y45Jnmy8CP7ftHDg7I48PZA8SH3RI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "932750349346-fehks1cc9qs4u3l5dp79fu8ck0eubea7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

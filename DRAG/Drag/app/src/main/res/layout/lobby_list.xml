@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:layout_margin="2dp"
+    android:background="@drawable/list_item_background"
+    >
+
+    <TextView
+        android:id="@+id/lobby_player_name"
+        android:text="@string/lobby_creator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+         />
+
+    <TextView
+        android:id="@+id/lobby_nr_of_players"
+        android:text="@string/lobby_nr_of_players"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/lobby_nr_of_rounds"
+        android:text="@string/lobby_nr_of_rounds"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp" />
+
+</LinearLayout>
