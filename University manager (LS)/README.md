@@ -1,6 +1,8 @@
 # 1819-2-common
 Software Laboratory, 2018/2019, Spring semester
 
+This projects has the objetive to help to manage an university environment, having information about classes,courses, groups, programmes, students, teachers and general users.
+
 # G17
 * 44015 [Pedro Tereso](https://github.com/PedroTereso)
 * 43755 Luís Guerra
