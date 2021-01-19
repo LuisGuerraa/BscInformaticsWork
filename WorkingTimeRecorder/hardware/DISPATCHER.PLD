@@ -1,0 +1,100 @@
+Name     Dispatcher ;
+PartNo   00 ;
+Date     03-May-18 ;
+Revision 01 ;
+Designer G10 ;
+Company  CCISEL ;
+Assembly None ;
+Location  ;
+Device   v750c ;
+
+/* *************** INPUT PINS *********************/
+PIN  1   = Mclk                        ;                                                               
+PIN  3   = Dval                        ;                                  
+PIN  4   = D5LnD                       ;                                  
+PIN  5   = D4OC                        ;
+PIN  6   = Sclose                      ;
+PIN  7   = Sopen                       ;
+PIN  8   = Psensor                     ;
+           
+
+
+
+ 
+
+/* *************** OUTPUT PINS *********************/
+                            
+PIN  22   =  WrL                       ;                                  
+PIN  21   =  done                      ;
+PIN  20   =  On                        ;
+PIN  15   =  OpenNClose                ;
+
+                                 
+/* *************** PINNODES    *********************/
+PINNODE[39,40]     =[Di0,Di1]                      ;
+PINNODE[29..31]    =[Dc0..Dc2]                     ;            
+
+/* *************** Dispatcher    *********************/
+
+[Di0..Di1].AR = 'b'0;
+[Di0..Di1].SP = 'b'0;
+[Di0..Di1].CK = Mclk;
+
+Sequence [Di0..Di1] {
+	Present 0
+		if Dval & !D5LnD next 1;
+		if Dval & D5LnD next 2;
+		default next 0;
+	
+	Present 1
+		out WrD;
+		if finish next 3;
+		default next 1;
+	
+	Present 2
+		out WrL;
+		default next 3;
+	
+	Present 3
+		out done;
+		if Dval next 3;
+		default next 0;
+
+}
+
+
+
+/* *************** Door Controller *********************/
+wr=WrD;
+finish=doneDoor;
+
+[Dc0,Dc1].AR = 'b'0;
+[Dc0,Dc1].SP = 'b'0;
+[Dc0,Dc1].CK = !Mclk;
+
+Sequence [Dc0,Dc1]{
+	Present 0
+		if !wr next 0;
+		if wr & D4OC next 2;
+		if wr & !D4OC next 1;
+	
+	Present 1
+		out On;
+		if Sclose & !D4OC next 3;
+		if !Sclose & Psensor next 2;
+		if !Sclose & !Psensor next 1;
+	
+	Present 2
+		out On,OpenNClose;
+		if Sopen & D4OC next 3;
+		if Sopen & !D4OC next 1;
+		default next 2;
+	
+	Present 3
+		out doneDoor;
+		if wr next 3;
+		default next 0;
+
+	
+
+}

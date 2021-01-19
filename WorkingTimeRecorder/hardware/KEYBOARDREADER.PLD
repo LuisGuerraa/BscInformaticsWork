@@ -1,0 +1,100 @@
+Name     KBD READER ;
+PartNo   00 ;
+Date     02/03/2018 ;
+Revision 01 ;
+Designer G10 ;
+Company  LIC1818 ;
+Assembly None ;
+Location  ;
+Device   v750c ;
+
+/* *************** INPUT PINS *********************/
+PIN    1     =  Mclk;
+PIN [5..8]   = [L0..3];
+PIN    9     =  ACK;
+
+/* *************** OUTPUT PINS *********************/ 
+PIN 14 = Wreg;
+PIN [20..22] = [C0..2];
+PIN [16..19] = [Q0..3];
+PIN    23   =  DVAL;
+PIN 15 = KPRESS;
+
+/***************** PINNODES ************************/
+
+PINNODE [29,30] = [X0,X1];
+
+[Q0..3].AR = 'b'0;
+[Q0..3].SP = 'b'0;
+[Q0..3].CK = !Mclk;
+
+CE = KSCAN;
+Q0.t = CE;
+Q1.t = Q0 & CE;
+Q2.t = Q1 & Q0 & CE;
+Q3.t = Q2 & Q1 & Q0 & CE;
+
+S0 = Q2;
+S1 = Q3;
+S2 = Q0;
+S3 = Q1;
+
+/* **************** Decoder************************/
+
+C0 = S0 # S1;
+C1 = !S0 # S1;
+C2 = S0 # !S1;
+
+/* **************** MUX ***************************/
+
+KPRESS = !(!S2&!S3&L0 # S2&!S3&L1 # !S2&S3&L2 # S2&S3&L3); 
+
+
+/* **************** ALT NOMENCLATURA *****************/
+
+DAV=KVAL;
+KACK=DAC;
+
+/* **************** ASM ***************************/
+[X0,X1].AR = 'b'0;
+[X0,X1].SP = 'b'0;
+[X0,X1].CK = Mclk;
+
+Sequence [X0,X1]{
+	Present 0
+		out KSCAN;
+		if !KPRESS next 0;
+		if KPRESS next 1;
+	Present 1
+		out KVAL;
+		if KACK next 2;
+		default next 1;
+	Present 2
+		if !KACK & !KPRESS next 0;
+		default next 2;
+	}
+
+/* **************** KEY BUFFER ***************************/
+
+PINNODE [31,32] = [Y0,Y1];
+
+[Y0,Y1].AR = 'b'0;
+[Y0,Y1].SP = 'b'0;
+[Y0,Y1].CK = Mclk;
+
+sequence [Y0,Y1] {
+
+	present 0 
+		if DAV next 1;
+		default next 0;
+	present 1 
+		out Wreg, DAC ;
+		next 2;
+	present 2
+		out DVAL;
+		if ACK next 3;
+		default next 2;
+	present 3
+		if ACK next 3;
+		default next 0;
+}

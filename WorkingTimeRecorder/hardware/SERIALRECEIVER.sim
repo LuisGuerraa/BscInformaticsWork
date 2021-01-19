@@ -1,0 +1,272 @@
+%SIGNAL
+PIN  31 =  C0 
+PIN  32 =  C1 
+PIN  33 =  C2 
+PIN  18 =  D0 
+PIN  19 =  D1 
+PIN  20 =  D2 
+PIN  21 =  D3 
+PIN  22 =  D4 
+PIN  23 =  D5 
+PIN  16 =  DXval 
+PIN   2 =  Mclk 
+PIN  25 =  P0 
+PIN  29 =  S0 
+PIN  30 =  S1 
+PIN   1 =  SCLK 
+PIN   3 =  SDX 
+PIN  26 =  T0 
+PIN  27 =  T1 
+PIN  28 =  T2 
+PIN   4 =  accept 
+PIN  17 =  busy 
+PIN  14 =  init 
+PIN  15 =  wr 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+C0.d  =>
+    C0 & !C1 & !C2 & T0
+  # C0 & !C1 & !C2 & !T1
+  # C0 & !C1 & !C2 & !T2
+  # C0 & C1 & !C2 & !accept
+  # !C0 & !C1 & !C2 & !S0 & S1
+  # !C0 & C1 & !C2 & !P0 & T0 & T1 & T2
+
+C0.ar  =>
+    0 
+
+C0.ck  =>
+    !Mclk
+
+C0.sp C1.sp C2.sp D0.sp D1.sp D2.sp D3.sp D4.sp D5.sp P0.sp S0.sp S1.sp T0.sp T1.sp T2.sp  =>
+    0 
+
+C1.d  =>
+    !C0 & C1 & !C2 & !P0
+  # !C0 & C1 & !C2 & !T0
+  # !C0 & C1 & !C2 & !T1
+  # !C0 & C1 & !C2 & !T2
+  # C0 & C1 & !C2 & !accept
+  # C0 & !C1 & !C2 & !T0 & T1 & T2
+
+C1.ar  =>
+    0 
+
+C1.ck  =>
+    !Mclk
+
+C1.sp  =>
+    
+C2.d  =>
+    !C0 & !C1 & C2 & accept
+  # C0 & C1 & !C2 & accept
+
+C2.ar  =>
+    0 
+
+C2.ck  =>
+    !Mclk
+
+C2.sp  =>
+    
+D0.d  =>
+    SDX & wr
+  # D0 & !wr
+
+D0.ar  =>
+    0 
+
+D0.ckmux  =>
+    SCLK
+
+D0.sp  =>
+    
+D1.d  =>
+    D0 & wr
+  # D1 & !wr
+
+D1.ar  =>
+    0 
+
+D1.ckmux  =>
+    SCLK
+
+D1.sp  =>
+    
+D2.d  =>
+    D1 & wr
+  # D2 & !wr
+
+D2.ar  =>
+    0 
+
+D2.ckmux  =>
+    SCLK
+
+D2.sp  =>
+    
+D3.d  =>
+    D2 & wr
+  # D3 & !wr
+
+D3.ar  =>
+    0 
+
+D3.ckmux  =>
+    SCLK
+
+D3.sp  =>
+    
+D4.d  =>
+    D3 & wr
+  # D4 & !wr
+
+D4.ar  =>
+    0 
+
+D4.ckmux  =>
+    SCLK
+
+D4.sp  =>
+    
+D5.d  =>
+    D4 & wr
+  # D5 & !wr
+
+D5.ar  =>
+    0 
+
+D5.ckmux  =>
+    SCLK
+
+D5.sp  =>
+    
+DXval =>
+    C0 & C1 & !C2
+
+P0.t  =>
+    SDX
+
+P0.ar  =>
+    init
+
+P0.ck  =>
+    SCLK
+
+P0.sp  =>
+    
+RXerror =>
+    P0
+
+S0.d  =>
+    !S1 & !SCLK & SDX
+
+S0.ar  =>
+    0 
+
+S0.ck  =>
+    Mclk
+
+S0.sp  =>
+    
+S1.d  =>
+    S0 & !S1 & !SCLK & !SDX
+
+S1.ar  =>
+    0 
+
+S1.ck  =>
+    Mclk
+
+S1.sp  =>
+    
+SIN =>
+    SDX
+
+Start =>
+    !S0 & S1
+
+T0.t  =>
+    1 
+
+T0.ar  =>
+    init
+
+T0.ckmux  =>
+    SCLK
+
+T0.sp  =>
+    
+T1.t  =>
+    T0
+
+T1.ar  =>
+    init
+
+T1.ckmux  =>
+    SCLK
+
+T1.sp  =>
+    
+T2.t  =>
+    T0 & T1
+
+T2.ar  =>
+    init
+
+T2.ckmux  =>
+    SCLK
+
+T2.sp  =>
+    
+busy =>
+    !C0 & !C1 & C2
+  # C0 & C1 & !C2
+
+dFlag =>
+    !T0 & T1 & T2
+
+init =>
+    !C0 & !C1 & !C2
+
+pFlag =>
+    T0 & T1 & T2
+
+wr =>
+    C0 & !C1 & !C2
+
+D0.oe  =>
+    1 
+
+D1.oe  =>
+    1 
+
+D2.oe  =>
+    1 
+
+D3.oe  =>
+    1 
+
+D4.oe  =>
+    1 
+
+D5.oe  =>
+    1 
+
+DXval.oe  =>
+    1 
+
+busy.oe  =>
+    1 
+
+init.oe  =>
+    1 
+
+wr.oe  =>
+    1 
+
+%END

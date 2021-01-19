@@ -1,0 +1,121 @@
+%SIGNAL
+PIN   5 =  D4OC 
+PIN   4 =  D5LnD 
+PIN  29 =  Dc0 
+PIN  30 =  Dc1 
+PIN  31 =  Dc2 
+PIN  39 =  Di0 
+PIN  40 =  Di1 
+PIN   3 =  Dval 
+PIN   1 =  Mclk 
+PIN  20 =  On 
+PIN  15 =  OpenNClose 
+PIN   8 =  Psensor 
+PIN   6 =  Sclose 
+PIN   7 =  Sopen 
+PIN  22 =  WrL 
+PIN  21 =  done 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+Dc0.d  =>
+    !Dc0 & Dc1 & Sopen
+  # Dc0 & Dc1 & Di0 & !Di1
+  # !D4OC & Dc0 & !Dc1 & Sclose
+  # Dc0 & !Dc1 & !Psensor & !Sclose
+  # !D4OC & !Dc0 & !Dc1 & Di0 & !Di1
+
+Dc0.ar  =>
+    0 
+
+Dc0.ck  =>
+    !Mclk
+
+Dc0.sp Dc1.sp Di0.sp Di1.sp  =>
+    0 
+
+Dc1.d  =>
+    D4OC & !Dc0 & Dc1
+  # !Dc0 & Dc1 & !Sopen
+  # D4OC & !Dc0 & Di0 & !Di1
+  # Dc0 & Dc1 & Di0 & !Di1
+  # !D4OC & Dc0 & !Dc1 & Sclose
+  # Dc0 & !Dc1 & Psensor & !Sclose
+
+Dc1.ar  =>
+    0 
+
+Dc1.ck  =>
+    !Mclk
+
+Dc1.sp  =>
+    
+Di0.d  =>
+    !Di0 & Di1
+  # Di0 & !Di1
+  # !D5LnD & Dval
+  # Di0 & Dval
+
+Di0.ar  =>
+    0 
+
+Di0.ck  =>
+    Mclk
+
+Di0.sp  =>
+    
+Di1.d  =>
+    !Di0 & Di1
+  # Di1 & Dval
+  # D5LnD & !Di0 & Dval
+  # Dc0 & Dc1 & Di0 & !Di1
+
+Di1.ar  =>
+    0 
+
+Di1.ck  =>
+    Mclk
+
+Di1.sp  =>
+    
+On =>
+    !Dc0 & Dc1
+  # Dc0 & !Dc1
+
+OpenNClose =>
+    !Dc0 & Dc1
+
+WrD =>
+    Di0 & !Di1
+
+WrL =>
+    !Di0 & Di1
+
+done =>
+    Di0 & Di1
+
+doneDoor =>
+    Dc0 & Dc1
+
+finish =>
+    Dc0 & Dc1
+
+wr =>
+    Di0 & !Di1
+
+On.oe  =>
+    1 
+
+OpenNClose.oe  =>
+    1 
+
+WrL.oe  =>
+    1 
+
+done.oe  =>
+    1 
+
+%END

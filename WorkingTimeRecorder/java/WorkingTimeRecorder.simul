@@ -1,0 +1,55 @@
+## --- Additional packages with Hardware to Simulator
+package workingtimerecorder.simul    # for Modules used in Working Time Recorder
+UsbPort = UsbPort
+
+# Generic modules to activate from Simulator
+kbd  = Keyboard("123456789*0#",4,3)
+lcd  = LCD
+m    = Switch ; "manut" ; setLabel("M")
+
+
+# Costume modules from WorkingTimeRecorder package
+kb  = KeyBuffer
+sr = SerialReceiverParity(6)
+dp  = Dispatcher
+dc = DoorController
+door = DoorMechanism
+
+## --- Links ---
+# Manut
+m.out -> UsbPort.I6
+
+# Key buffer and keyboard
+1 -> kbd.oe
+kbd.K[0-3] -> kb.D[0-3]
+kb.K[0-3] -> UsbPort.I[0-3]
+kbd.val -> kb.DAV
+kb.Dval -> UsbPort.I4
+UsbPort.O7 -> kb.ACK
+kb.DAC -> kbd.ack
+
+# SERIAL
+UsbPort.O1 -> sr.SDX
+UsbPort.O0-> sr.SCLK
+dp.done -> sr.accept
+sr.busy -> UsbPort.I5
+
+# LCD
+dp.D[1-4] -> lcd.D[4-7]
+dp.D0 -> lcd.rs
+dp.WrL -> lcd.e
+sr.DXval -> dp.Dval
+sr.D[1-5] -> dp.I[0-4]
+sr.D0 -> dp.LnD
+
+
+# Door
+dc.V[0-3] -> door.V[0-3]
+dc.On -> door.On/Off
+dc.Open -> door.Open/Close
+dc.done -> dp.finish
+door.FCclose -> dc.Sclose
+door.FCopen -> dc.Sopen
+door.Pdetect -> dc.Psensor
+dp.WrD -> dc.wr
+sr.D[1-5] -> dc.I[0-4]

@@ -1,0 +1,29 @@
+1;183;Paulo;16140586
+2;1124;Pedro Miguens;27708443
+3;5784;Joao Manuel;102134
+4;9762;Guilherme;0
+200;1234;xpto;0
+5;4183;Tiago Dias;35876
+6;5381;Ze;0
+7;1124;Tim;0
+8;1124;Manuel;0
+9;1249;Paula;0
+10;2072;Rui;0
+11;183;Paulo;0
+12;1124;Pedro Miguens;0
+13;5784;Joao Manuel;0
+14;9762;Guilherme;0
+15;4183;Tiago Dias;0
+16;5381;Ze;0
+50;3333;luis;24291
+17;1124;Tim;0
+18;1249;Elisabete;0
+991;183;Paulo;16140586
+993;5784;Joao Manuel;0
+994;9762;Guilherme;0
+995;4183;Tiago Dias;0
+996;5381;Ze;0
+997;1124;Tim;0
+998;183;Paulo;16140586
+999;1034;Pedro Miguens;30906
+847;123456789;optx;0

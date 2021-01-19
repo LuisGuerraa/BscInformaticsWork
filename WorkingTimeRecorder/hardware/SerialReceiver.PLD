@@ -1,0 +1,132 @@
+Name     SerialReceiver ;
+PartNo   00 ;
+Date     27-Mar-18 ;
+Revision 01 ;
+Designer Engineer ;
+Company  CCISEL ;
+Assembly None ;
+Location  ;
+Device   v750c ;
+
+/* *************** INPUT PINS *********************/
+PIN  1  = SCLK                                    ; 
+PIN  2  = Mclk                                    ;                                  
+PIN  3  = SDX                                     ;                                 
+PIN  4  = accept                                  ;
+
+/* *************** OUTPUT PINS *********************/
+PIN  [18..23]   = [D0..D5]                        ;                                 
+PIN  17         = busy                            ;
+PIN  16         = DXval                           ;
+PIN  14         = init                            ;
+PIN  15         = wr                              ;
+
+/* *************** PINNODES *********************/
+/*PINNODE[40,41]  = [dFlag,pFlag]                   ;*/
+PINNODE[26..28] = [T0..T2]                        ;
+PINNODE[29,30]  = [S0,S1]                         ;
+PINNODE[31..33] = [C0..C2]                        ;
+PINNODE[25] = [P0];
+
+/* *************** Serial Receiver *********************/
+
+
+/* *************** Shift Register *********************/
+[D0..D5].SP='b'0;
+[D0..D5].AR='b'0;
+[D0..D5].CKMUX= SCLK; 
+
+SIN = SDX;
+
+D0.d = (wr&SIN)#(!wr&D0);
+D1.d = (wr&D0)#(!wr&D1);
+D2.d = (wr&D1)#(!wr&D2);
+D3.d = (wr&D2)#(!wr&D3);
+D4.d = (wr&D3)#(!wr&D4);
+D5.d = (wr&D4)#(!wr&D5);
+
+/* *************** Counter *********************/
+
+[T0..2].AR=init;
+[T0..2].SP='b'0;
+[T0..2].CKMUX=SCLK;
+
+T0.t='b'1;
+T1.t=T0;
+T2.t=T0&T1;
+
+
+pFlag=T2&T1&T0;
+dFlag=T2&T1&!T0;
+
+
+/* *************** Start ASM *********************/
+[S0,S1].AR = 'b'0;
+[S0,S1].SP = 'b'0;
+[S0,S1].CK = Mclk;
+
+Sequence [S0,S1]{
+	Present 0
+		if SCLK next 0;
+		if !SCLK & !SDX next 0;
+		if !SCLK & SDX next 1;
+	Present 1
+		if SCLK next 0;
+		if !SCLK & SDX next 1;
+		if !SCLK & !SDX next 2;
+
+	Present 2
+		out Start;
+		default next 0;
+	}
+
+
+/* *************** Control ASM *********************/
+RXerror = P0;
+
+
+[C0..C2].AR = 'b'0;
+[C0..C2].SP = 'b'0;
+[C0..C2].CK = !Mclk;
+
+Sequence [C0..C2]{
+	Present 0
+		out init;
+		if Start next 1;
+		default next 0;
+	
+	Present 1
+		out wr;
+		
+		if dFlag next 2;
+		default next 1;
+	
+	Present 2
+		
+		if pFlag & RXerror next 0;
+		if pFlag & !RXerror next 3;
+		default next 2;
+	
+	Present 3
+		out busy,DXval;
+				
+		if accept next 4;
+		default next 3;
+
+	Present 4
+		out busy;
+		
+		if !accept next 0;
+		default next 4;
+
+}
+
+/* *************** Parity Check *********************/
+P0.AR=init;
+P0.SP='b'0;
+P0.CK=SCLK;
+
+P0.T= SDX;
+
+
+
