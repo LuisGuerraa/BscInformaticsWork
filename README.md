@@ -11,3 +11,12 @@ Some apps developed by me and some colleagues for Informatics course
 ### 5th semester -> COTA & CIBORG ([JavaScript](https://javascript.info/) with [Node.js](https://nodejs.org/en/) on the server-side and [HTML](https://wikipedia.org/wiki/HTML)/[CSS](https://wikipedia.org/wiki/Cascading_Style_Sheets) on the front-side)
 ### 5th semester -> Drag ([Android](https://developer.android.com/) framework)
 ### 6th semester -> Projects Manager ([Kotlin](https://kotlinlang.org/) with [Spring](https://spring.io/) and [React.js](https://reactjs.org/))
+
+
+##Academic path
+
+| Course | Topic | Type | Technologies | Year/Semester |
+|--------|-------|------|--------------|---------------|
+|   Programming     | Introduction to programming      |      | informatics             |  java            | 1/1
+|        |       |      |              |               |
+|        |       |      |              |               |
