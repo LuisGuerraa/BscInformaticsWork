@@ -5,6 +5,7 @@ Hey! Welcome to my repository where i show you some of my projects done in the c
 
 ## Some apps developed by me and some colleagues throughout the course:
 
+### 1st semester -> 2048 & 4InARow ([JAVA](https://www.java.com))
 ### 2nd semester -> WorkingTimeRecorder ([JAVA](https://www.java.com) and [WinCupl](https://www.microchip.com/en-us/products/fpgas-and-plds/spld-cplds/pld-design-resources))
 ### 3rd semester -> Boardstar ([JAVA](https://www.java.com))
 ### 4th semester -> University Manager ([JAVA](https://www.java.com) and deployed on [Heroku](https://www.heroku.com/))
