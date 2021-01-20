@@ -13,6 +13,9 @@ Some apps developed by me and some colleagues for Informatics course
 ### 6th semester -> Projects Manager ([Kotlin](https://kotlinlang.org/) with [Spring](https://spring.io/) and [React.js](https://reactjs.org/))
 
 
+
+
+
 ## Academic path
 
 | Course | Topic | Type | Technologies | Year/Semester |
@@ -21,7 +24,21 @@ Some apps developed by me and some colleagues for Informatics course
 | Logic and Digital Systems       | Logic operations and microchip programming       | Informatics     | WinCupl             |  1/1             |
 | Eletronics       | Eletrics devices and connections      |  Informatics    |   ---------   |  1/1             |
 | Algebra      | Study of mathematical symbols      | Maths     | -------------- |     1/1          |
-| Mathematics      |  Math functions and Operations     | Maths      |  ---------------   |       1/1        |
-|        |       |      |              |               |
-|        |       |      |              |               |
-|        |       |      |              |               |
+| Mathematics I      |  Math functions and Operations     | Maths      |  ---------------   |       1/1        |
+|--------|-------|------|--------------|---------------|
+| OOP    |  Object-Oriented Programming     | Informatics     | Java              |  1/2             |
+| Computer Architecture     | Assembly and architectural features       |  Informatics    |   Hardware/Assembly           | 1/2              |
+| Informatics Laboratory     | Software and Hardware development      | Informatics     |  Java/WinCupl/Hardware            |  1/2             |
+| Statistics       | Probabilities and Statistics       | Maths      | -------------    | 1/2              |
+| Mathmatics II       |  Maths logical problem solving      | Maths     | ----------  | 1/2              |
+|--------|-------|------|--------------|---------------|
+| Computer Systems Programming      | Understanding the execution model of programs      | Informatics      | C/Assemblyx86             | 2/1              |
+| Communications       | Signal learning and repoduction      | Informatics     |  Matlab/Laboratory            | 2/1               |
+|Information Systems I|Database Learning|Informatics|SQL/C#|2/1|
+|--------|-------|------|--------------|---------------|
+
+
+
+
+
+
