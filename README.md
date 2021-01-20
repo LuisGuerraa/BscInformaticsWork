@@ -47,8 +47,8 @@ Some apps developed by me and some colleagues for Informatics course
 | Internet Programming | Introduction to programming on the WEB | Informatics | JavaScript/NodeJs/HTML/CSS |3/1 |
 | Information Systems II | Building a more capable database and application | Informatics | C# and SQL | 3/1  |
 | Mobile Development | Understanding and building on Android Framework | Informatics | Android/Kotlin | 3/1 |
-| CyberSecurity | Basics of Cibersecurity and Java cryptography support | Informatics | Java | 2/2 |
-| Concurrent Programming | Understanding Concurrency concerns | Informatics | Java/C# | 2/2 |
+| CyberSecurity | Basics of Cibersecurity and Java cryptography support | Informatics | Java | 3/1 |
+| Concurrent Programming | Understanding Concurrency concerns | Informatics | Java/C# | 3/1 |
 | | | | | |
 | Internet Networking | Learn how to set up a big scale network| Networks | Cisco Packet Tracer/Gns3 | 3/2 |
 | Web Development | Developing a more robust web applictiona | Informatics  | Kotlin/Spring JavaScript/React | 3/2 |
