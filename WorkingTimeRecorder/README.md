@@ -7,20 +7,20 @@ In the code we can choose to run it on the original hardware specified on the re
 
 ### Here are some prints reagarding the User Interface simulator:
 
-![BG](https://i.gyazo.com/24631bf33490e39faf87409704c4538c.png)
+![](https://i.gyazo.com/24631bf33490e39faf87409704c4538c.png)
 
-![](https://gyazo.com/cf503ceb2f55ae5de778b5ea751b032c)
+![](https://i.gyazo.com/cf503ceb2f55ae5de778b5ea751b032c.png)
 
-![](https://gyazo.com/7c0888e11a44db1ccd409b3d2c141ddb)
+![](https://i.gyazo.com/7c0888e11a44db1ccd409b3d2c141ddb.png)
 
-![](https://gyazo.com/64a2ae244097f6b530995212c295c76d)
+![](https://i.gyazo.com/64a2ae244097f6b530995212c295c76d.png)
 
-![](https://gyazo.com/f8b2a7e1d301da3f1da6a68ffdf7f57c)
+![](https://i.gyazo.com/f8b2a7e1d301da3f1da6a68ffdf7f57c.png)
 
-![](https://gyazo.com/42c51bc37976d892ef094f0beeb1f9a1)
+![](https://i.gyazo.com/42c51bc37976d892ef094f0beeb1f9a1.png)
 
-![](https://gyazo.com/5d4e3048dddc5e6f78b4e3e5ba35e10f)
+![](https://i.gyazo.com/5d4e3048dddc5e6f78b4e3e5ba35e10f.png)
 
-![](https://gyazo.com/87db935a4a7ffc5e0becb95d15be0701)
+![](https://i.gyazo.com/87db935a4a7ffc5e0becb95d15be0701.png)
 
 
