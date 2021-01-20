@@ -10,7 +10,7 @@ CIBORG is a web application where users can manage groups containing your favori
 # Building and Running the App
 
 - `run bat file of Elastic Search named "elasticsearch.bat"`
-- `git clone https://github.com/LuisGuerraa/StolenWorkOfCourse`
+- `git clone https://github.com/LuisGuerraa/CollegeWork`
 - `cd CIBORG`
 - `npm install`
 - `node cota-server.js`
