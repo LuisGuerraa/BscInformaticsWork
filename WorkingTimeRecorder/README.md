@@ -7,7 +7,7 @@ In the code we can choose to run it on the original hardware specified on the re
 
 ### Here are some prints reagarding the User Interface simulator:
 
-![](https://gyazo.com/24631bf33490e39faf87409704c4538c)
+![BG](https://i.gyazo.com/24631bf33490e39faf87409704c4538c.png)
 
 ![](https://gyazo.com/cf503ceb2f55ae5de778b5ea751b032c)
 
