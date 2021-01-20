@@ -23,20 +23,27 @@ Some apps developed by me and some colleagues for Informatics course
 | Programming       | Introduction to Programming      | Informatics     |  Java            |  1/1             |
 | Logic and Digital Systems       | Logic operations and microchip programming       | Informatics     | WinCupl             |  1/1             |
 | Eletronics       | Eletrics devices and connections      |  Informatics    |   ---------   |  1/1             |
-| Algebra      | Study of mathematical symbols      | Maths     | -------------- |     1/1          |
-| Mathematics I      |  Math functions and Operations     | Maths      |  ---------------   |       1/1        |
-|--------|-------|------|--------------|---------------|
+| Algebra      | Study of mathematical symbols      | Maths     | -------- |     1/1          |
+| Mathematics I      |  Math functions and Operations     | Maths      |  --------   |       1/1        |
+| | | | | |
 | OOP    |  Object-Oriented Programming     | Informatics     | Java              |  1/2             |
 | Computer Architecture     | Assembly and architectural features       |  Informatics    |   Hardware/Assembly           | 1/2              |
 | Informatics Laboratory     | Software and Hardware development      | Informatics     |  Java/WinCupl/Hardware            |  1/2             |
-| Statistics       | Probabilities and Statistics       | Maths      | -------------    | 1/2              |
-| Mathmatics II       |  Maths logical problem solving      | Maths     | ----------  | 1/2              |
-|--------|-------|------|--------------|---------------|
+| Statistics       | Probabilities and Statistics       | Maths      | ---------    | 1/2              |
+| Mathmatics II       |  Maths logical problem solving      | Maths     | --------  | 1/2              |
+| | | | | |
 | Computer Systems Programming      | Understanding the execution model of programs      | Informatics      | C/Assemblyx86             | 2/1              |
 | Communications       | Signal learning and repoduction      | Informatics     |  Matlab/Laboratory            | 2/1               |
-|Information Systems I|Database Learning|Informatics|SQL/C#|2/1|
-|--------|-------|------|--------------|---------------|
-
+| Information Systems I|Database Learning|Informatics|SQL/C#|2/1|
+| Algorithims | Algorithims and Data Structures | Informatics | Java | 2/1 |
+| Managment | Planification and managing a company  | Business |--------- | 2/1 |
+| | | | | |
+| Networks | Basics on Networking (Cisco) | Comms | Gns3/Cisco Packet Tracer/Wireshark | 2/2 |
+| Software Laboratory| Development of software  | Informatics | Java | 2/2 |
+| Languages and Managed Runtimes |Understanding the main constituents of managed runtimes | Informatics | C#(.NET) | 2/2 |
+| CyberSecurity | Basics of Cibersecurity and Java cryptography support | Informatics | Java | 2/2 |
+| Operating Systems | Understanding Windows OS and memory managment| Informatics| C++| 2/2
+| | | | | |
 
 
 
