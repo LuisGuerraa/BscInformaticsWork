@@ -23,9 +23,9 @@ Other courses that don´t make sense to add here but are worth mentioning were C
 |--------|-------|------|--------------|---------------|
 | Programming       | Introduction to Programming      | Informatics     |  Java            |  1/1             |
 | Logic and Digital Systems       | Logic operations and microchip programming       | Informatics     | WinCupl             |  1/1             |
-| Eletronics       | Eletrics devices and connections      |  Informatics    |   ---------   |  1/1             |
+| Electronics       | Electric components and connections      |  Informatics    |   ---------   |  1/1             |
 | Algebra      | Study of mathematical symbols      | Maths     | -------- |     1/1          |
-| Mathematics I      |  Math functions and Operations     | Maths      |  --------   |       1/1        |
+| Mathematics I      |  Math functions and operations     | Maths      |  --------   |       1/1        |
 | | | | | |
 | OOP    |  Object-Oriented Programming     | Informatics     | Java              |  1/2             |
 | Computer Architecture     | Assembly and architectural features       |  Informatics    |   Hardware/Assembly           | 1/2              |
