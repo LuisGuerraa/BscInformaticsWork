@@ -11,7 +11,7 @@ In the code we can choose to run it on the original hardware specified on the re
 
 ![](https://media.discordapp.net/attachments/776940020674068500/801515301237424148/IMG_20180419_1317011.jpg?width=1202&height=676)
 
-![](https://media.discordapp.net/attachments/776940020674068500/801515301174247434/IMG_20180419_131657.jpg?width=1202&height=676)
+
 
 ![](https://media.discordapp.net/attachments/776940020674068500/801515327687098388/IMG_20180517_1254421.jpg?width=380&height=676)
 
