@@ -52,7 +52,7 @@ Other courses that don´t make sense to add here but are worth mentioning were C
 | Concurrent Programming | Understanding concurrency programming concerns | Informatics | Java/C# | 3/1 |
 | | | | | |
 | Internet Networking | Learn how to set up a big scale network| Networks | Cisco Packet Tracer/Gns3 | 3/2 |
-| Web Development | Developing a more robust web applications | Informatics  | Kotlin/Spring JavaScript/React | 3/2 |
+| Web Development | Developing a more robust web application | Informatics  | Kotlin/Spring JavaScript/React | 3/2 |
 
 
 
