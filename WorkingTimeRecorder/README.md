@@ -5,6 +5,19 @@ If they are correctly inputed the program identfies you, shows you your entrance
 shows the entrance hour, the exit hour and the total time that the worker was on the building controlling the workers.
 In the code we can choose to run it on the original hardware specified on the report or run on a interface buil in java.
 
+### Here are some photos reagarding the hardware used and their connections:
+
+![](https://scontent.flis9-1.fna.fbcdn.net/v/l/t34.18173-12/29341252_1954127347962686_1408681754_n.png?_nc_cat=101&ccb=2&_nc_sid=ae9488&_nc_ohc=J1tohgMCMnkAX9vEel3&_nc_ht=scontent.flis9-1.fna&oh=72718642690c44912ccfc660c5c0ea33&oe=600A2701)
+
+![](https://media.discordapp.net/attachments/776940020674068500/801515301237424148/IMG_20180419_1317011.jpg?width=1202&height=676)
+
+![](https://media.discordapp.net/attachments/776940020674068500/801515301174247434/IMG_20180419_131657.jpg?width=1202&height=676)
+
+![](https://media.discordapp.net/attachments/776940020674068500/801515327687098388/IMG_20180517_1254421.jpg?width=380&height=676)
+
+
+
+
 ### Here are some prints reagarding the User Interface simulator:
 
 ![](https://i.gyazo.com/24631bf33490e39faf87409704c4538c.png)
