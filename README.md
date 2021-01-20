@@ -34,7 +34,7 @@ Other courses that don´t make sense to add here but are worth mentioning were C
 | Mathmatics II       |  Maths logical problem solving      | Maths     | --------  | 1/2              |
 | | | | | |
 | Computer Systems Programming      | Understanding the execution model of programs      | Informatics      | C/Assemblyx86             | 2/1              |
-| Communications       | Signal learning and repoduction      | Informatics     |  Matlab/Laboratory            | 2/1               |
+| Communications       | Signal learning,reproduction and manipulation     | Informatics     |  Matlab/Laboratory            | 2/1               |
 | Information Systems I|Database Learning|Informatics|SQL/C#|2/1|
 | Algorithims | Algorithims and Data Structures | Informatics | Java | 2/1 |
 | Managment | Planification and managing a company  | Business |--------- | 2/1 |
