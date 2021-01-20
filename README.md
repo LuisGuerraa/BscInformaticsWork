@@ -6,7 +6,7 @@ Other courses that don´t make sense to add here but are worth mentioning were C
 
 ## Some apps developed by me and some colleagues for Informatics course:
 
-### 2nd semester -> WorkingTimeRecorder ([JAVA](https://www.java.com) and [WinCupl](https://www.microchip.com/en-us/products/fpgas-and-plds/spld-cplds/pld-design-resources)
+### 2nd semester -> WorkingTimeRecorder ([JAVA](https://www.java.com) and [WinCupl](https://www.microchip.com/en-us/products/fpgas-and-plds/spld-cplds/pld-design-resources))
 ### 3rd semester -> Boardstar ([JAVA](https://www.java.com))
 ### 4th semester -> University Manager ([JAVA](https://www.java.com) and deployed on [Heroku](https://www.heroku.com/))
 ### 5th semester -> COTA & CIBORG ([JavaScript](https://javascript.info/) with [Node.js](https://nodejs.org/en/) on the server-side and [HTML](https://wikipedia.org/wiki/HTML)/[CSS](https://wikipedia.org/wiki/Cascading_Style_Sheets) on the front-side)
