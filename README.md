@@ -16,7 +16,7 @@ Some apps developed by me and some colleagues for Informatics course
 
 
 
-## Academic path
+## Full Academic path
 
 | Course | Topic | Type | Technologies | Year/Semester |
 |--------|-------|------|--------------|---------------|
