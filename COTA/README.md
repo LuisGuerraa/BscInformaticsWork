@@ -1,4 +1,6 @@
-## This project has the objetive giving the user a pleasent way to search and manage groups of their favourite series.
+##COTA - Chelas Open Tv Application
+
+This project has the objetive giving the user a pleasent way to search and manage groups of their favourite series.
 
 ### Students :
 
