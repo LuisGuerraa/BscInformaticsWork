@@ -14,7 +14,7 @@ This project has the objetive to help people to manage their project like an org
 
 ### Technologies used :
 
-For the server-side we use [Kotlin](https://kotlinlang.org/) language implemented through [Spring](https://spring.io/) framework, particularly [SpringMVC](https://spring.io/guides/gs/serving-web-content/). On the client-side we choose to build the user interface with JavaScript through a library called [React](https://reactjs.org/).
+For the server-side we use [Kotlin](https://kotlinlang.org/) language implemented through [Spring](https://spring.io/) framework, particularly [SpringMVC](https://spring.io/guides/gs/serving-web-content/). On the client-side we chose to build the user interface with JavaScript through a library called [React](https://reactjs.org/).
 
 ### Database Entity Diagram
 
