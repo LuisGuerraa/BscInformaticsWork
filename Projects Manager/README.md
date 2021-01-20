@@ -19,7 +19,7 @@ For the server-side we use [Kotlin](https://kotlinlang.org/) language implemente
 ### Database Entity Diagram
 
 <p align="center">
-  <img src="https://github.com/isel-leic-daw/S1920V-LI61N-G03/blob/master/Backend/resources/DatabaseFiles/EAModel_DAW.png" alt="Entity-Association DB Model"/>
+  <img src="https://raw.githubusercontent.com/isel-leic-daw/S1920V-LI61N-G03/master/Backend/resources/DatabaseFiles/EAModel_DAW.png?token=ALNOVZD5XW75XD3YTECLKODACG6SE" alt="Entity-Association DB Model"/>
 </p>
 
 ### Brief Information about the database:
