@@ -23,7 +23,7 @@ Hey! Welcome to my repository where i show you some of my projects done in the c
 |--------|-------|------|--------------|---------------|
 | Programming       | Introduction to Programming      | Informatics     |  Java            |  1/1             |
 | Logic and Digital Systems       | Logic operations and microchip programming       | Informatics     | WinCupl             |  1/1             |
-| Electronics       | Electric components and connections      |  Informatics    |   LTspice   |  1/1             |
+| Electronics       | Electric components and connections      |  Informatics    |   LTspice/Laboratory   |  1/1             |
 | Algebra      | Study of mathematical symbols      | Maths     | -------- |     1/1          |
 | Mathematics I      |  Math functions and operations     | Maths      |  --------   |       1/1        |
 | | | | | |
