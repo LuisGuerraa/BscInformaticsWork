@@ -13,10 +13,15 @@ Some apps developed by me and some colleagues for Informatics course
 ### 6th semester -> Projects Manager ([Kotlin](https://kotlinlang.org/) with [Spring](https://spring.io/) and [React.js](https://reactjs.org/))
 
 
-##Academic path
+## Academic path
 
 | Course | Topic | Type | Technologies | Year/Semester |
 |--------|-------|------|--------------|---------------|
-|   Programming     | Introduction to programming      |      | informatics             |  java            | 1/1
+| Programming       | Introduction to Programming      | Informatics     |  Java            |  1/1             |
+| Logic and Digital Systems       | Logic operations and microchip programming       | Informatics     | WinCupl             |  1/1             |
+| Eletronics       | Eletrics devices and connections      |  Informatics    |   ---------   |  1/1             |
+| Algebra      | Study of mathematical symbols      | Maths     | -------------- |     1/1          |
+| Mathematics      |  Math functions and Operations     | Maths      |  ---------------   |       1/1        |
+|        |       |      |              |               |
 |        |       |      |              |               |
 |        |       |      |              |               |
