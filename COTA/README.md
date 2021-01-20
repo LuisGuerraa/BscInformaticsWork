@@ -1,6 +1,4 @@
 ## This project has the objetive giving the user a pleasent way to search and manage groups of their favourite series.
-## Overview of UI:
-https://raw.githubusercontent.com/TiagoPereira06/EDU_Cota/43592/docs/screenshots.gif
 
 ### Students :
 
