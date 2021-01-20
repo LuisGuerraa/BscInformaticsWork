@@ -10,7 +10,7 @@ Hey! Welcome to my repository where i show you some of my projects done in the c
 ### 4th semester -> University Manager ([JAVA](https://www.java.com) and deployed on [Heroku](https://www.heroku.com/))
 ### 5th semester -> COTA & CIBORG ([JavaScript](https://javascript.info/) with [Node.js](https://nodejs.org/en/) on the server-side and [HTML](https://wikipedia.org/wiki/HTML)/[CSS](https://wikipedia.org/wiki/Cascading_Style_Sheets) on the front-side)
 ### 5th semester -> Drag ([Android](https://developer.android.com/) framework)
-### 6th semester -> Projects Manager ([Kotlin](https://kotlinlang.org/) with [Spring](https://spring.io/) and [React.js](https://reactjs.org/))
+### 6th semester -> Projects Manager ([Kotlin](https://kotlinlang.org/) with [Spring](https://spring.io/) on the server-side and [React.js](https://reactjs.org/) on the front-side)
 
 
 
