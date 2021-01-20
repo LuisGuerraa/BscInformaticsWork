@@ -7,6 +7,18 @@ This project has the objetive giving the user a pleasent way to search and manag
 * [Tiago Pereira](https://github.com/TiagoPereira06) - 43592
 * Luis Guerra - 43755
 
+
+<p align="center">
+<img src="https://github.com/TiagoPereira06/EDU_Cota/blob/43592/client/src/images/logo.png" width="200">
+</p>
+
+## UI Showcase
+
+<p align="center">
+<img src="https://github.com/TiagoPereira06/EDU_Cota/blob/43592/docs/screenshots.gif" width="800">
+</p>
+
+
 # API Architecture Diagram
 
 ![](https://media.discordapp.net/attachments/693837643926208584/727584348043346010/6da5d519e765f0174bceac2606b27b7b.png)
