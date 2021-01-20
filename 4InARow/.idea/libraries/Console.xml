@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Console">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/isel/leic/pg/Console.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/src/isel/leic/pg/Console.jar!/docs" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>
