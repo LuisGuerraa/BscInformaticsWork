@@ -5,7 +5,7 @@ If they are correctly inputed the program identfies you, shows you your entrance
 shows the entrance hour, the exit hour and the total time that the worker was on the building controlling the workers.
 In the code we can choose to run it on the original hardware specified on the report or run on a interface buil in java.
 
-### Here are some photos reagarding the hardware used and their connections:
+### Here are some photos regarding the hardware used and their connections:
 
 ![](https://scontent.flis9-1.fna.fbcdn.net/v/l/t34.18173-12/29341252_1954127347962686_1408681754_n.png?_nc_cat=101&ccb=2&_nc_sid=ae9488&_nc_ohc=J1tohgMCMnkAX9vEel3&_nc_ht=scontent.flis9-1.fna&oh=72718642690c44912ccfc660c5c0ea33&oe=600A2701)
 
