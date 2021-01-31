@@ -41,7 +41,7 @@ Hey! Welcome to my repository where i show you some of my projects done in the c
 | | | | | |
 | Networks | Basics on Networking (Cisco) | Comms | Gns3/Cisco Packet Tracer/Wireshark | 2/2 |
 | Software Laboratory| Development of software  | Informatics | Java | 2/2 |
-| Languages and Managed Runtimes |Understanding the main constituents of managed runtimes | Informatics | C#(.NET) | 2/2 |
+| Languages and Managed Runtimes |Understanding the main constituents of managed runtimes (CLI,CLR and CIL) | Informatics | C#(.NET) | 2/2 |
 |Design Patterns and Modeling | Learning some programming models and aplying them | Informatics | Java | 2/2 |
 | Operating Systems | Understanding Windows OS and memory managment| Informatics| C++| 2/2|
 | | | | | |
