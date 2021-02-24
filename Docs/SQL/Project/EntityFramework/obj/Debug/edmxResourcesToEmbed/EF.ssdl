@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TL52D_4Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Aluno">
+    <Key>
+      <PropertyRef Name="num_aluno" />
+    </Key>
+    <Property Name="num_aluno" Type="numeric" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="aluno_cc" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="nome" Type="varchar" MaxLength="30" />
+    <Property Name="morada" Type="varchar" MaxLength="60" />
+    <Property Name="data_nascimento" Type="date" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'TL52D_4.dbo.Aluno_Curso' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Aluno_Curso">
+          <Property Name="aluno" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="curso" Type="char" MaxLength="6" />
+          <Property Name="ano" Type="date" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'TL52D_4.dbo.Aluno_UC' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Aluno_UC">
+    <Key>
+      <PropertyRef Name="ano_letivo" />
+    </Key>
+    <Property Name="aluno" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="curso" Type="char" MaxLength="6" />
+    <Property Name="uc" Type="char" MaxLength="6" />
+    <Property Name="ano_letivo" Type="date" Nullable="false" />
+    <Property Name="ano_conclusao" Type="date" />
+    <Property Name="nota" Type="numeric" Precision="18" Scale="0" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'TL52D_4.dbo.Certificado' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="Certificado">
+          <Property Name="nota_final" Type="numeric" Precision="18" Scale="0" />
+          <Property Name="data_conclusao" Type="date" />
+          <Property Name="aluno" Type="numeric" Precision="18" Scale="0" />
+        </EntityType>-->
+  <EntityType Name="Curso">
+    <Key>
+      <PropertyRef Name="curso_sigla" />
+    </Key>
+    <Property Name="curso_sigla" Type="char" MaxLength="6" Nullable="false" />
+    <Property Name="dpt" Type="char" MaxLength="6" />
+    <Property Name="curso_desc" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="Departamento">
+    <Key>
+      <PropertyRef Name="dpt_sigla" />
+    </Key>
+    <Property Name="dpt_sigla" Type="char" MaxLength="6" Nullable="false" />
+    <Property Name="dpt_desc" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="Professor">
+    <Key>
+      <PropertyRef Name="prof_cc" />
+    </Key>
+    <Property Name="prof_cc" Type="char" MaxLength="12" Nullable="false" />
+    <Property Name="nome" Type="varchar" MaxLength="30" />
+    <Property Name="area_espec" Type="varchar" MaxLength="30" />
+    <Property Name="categoria" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <EntityType Name="Seccao">
+    <Key>
+      <PropertyRef Name="sect_sigla" />
+    </Key>
+    <Property Name="sect_sigla" Type="char" MaxLength="6" Nullable="false" />
+    <Property Name="dpt" Type="char" MaxLength="6" />
+    <Property Name="coordenador" Type="char" MaxLength="12" />
+    <Property Name="sect_desc" Type="varchar" MaxLength="60" />
+  </EntityType>
+  <EntityType Name="Semestre">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'TL52D_4.dbo.UC_Curso' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="UC_Curso">
+          <Property Name="uc" Type="char" MaxLength="6" />
+          <Property Name="ano" Type="date" />
+          <Property Name="curso" Type="char" MaxLength="6" />
+          <Property Name="semestre" Type="int" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'TL52D_4.dbo.UC_Prof' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="UC_Prof">
+          <Property Name="uc" Type="char" MaxLength="6" />
+          <Property Name="ano" Type="date" />
+          <Property Name="prof" Type="char" MaxLength="12" />
+        </EntityType>-->
+  <EntityType Name="Unidade_Curricular">
+    <Key>
+      <PropertyRef Name="uc_sigla" />
+      <PropertyRef Name="ano" />
+    </Key>
+    <Property Name="uc_sigla" Type="char" MaxLength="6" Nullable="false" />
+    <Property Name="ano" Type="date" Nullable="false" />
+    <Property Name="creditos" Type="numeric" Precision="18" Scale="0" />
+    <Property Name="uc_desc" Type="varchar" MaxLength="60" />
+    <Property Name="regente" Type="char" MaxLength="12" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6013: The table/view 'TL52D_4.dbo.CreditosCurso' does not have a primary key defined and no valid primary key could be inferred. This table/view has been excluded. To use the entity, you will need to review your schema, add the correct keys, and uncomment it.
+        <EntityType Name="CreditosCurso">
+          <Property Name="curso" Type="char" MaxLength="6" />
+          <Property Name="uc" Type="char" MaxLength="6" />
+          <Property Name="creditos" Type="numeric" Precision="18" Scale="0" />
+        </EntityType>-->
+  <!--Errors Found During Generation:
+error 6004: The table 'TL52D_4.dbo.Aluno_Curso' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__Aluno_Cur__aluno__1C1D2798" />-->
+  <!--Errors Found During Generation:
+error 6004: The table 'TL52D_4.dbo.Aluno_Curso' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__Aluno_Cur__curso__1D114BD1" />-->
+  <Association Name="FK__Aluno_UC__1A34DF26">
+    <End Role="Unidade_Curricular" Type="Self.Unidade_Curricular" Multiplicity="0..1" />
+    <End Role="Aluno_UC" Type="Self.Aluno_UC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Unidade_Curricular">
+        <PropertyRef Name="uc_sigla" />
+        <PropertyRef Name="ano" />
+      </Principal>
+      <Dependent Role="Aluno_UC">
+        <PropertyRef Name="uc" />
+        <PropertyRef Name="ano_letivo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Aluno_UC__aluno__1758727B">
+    <End Role="Aluno" Type="Self.Aluno" Multiplicity="0..1" />
+    <End Role="Aluno_UC" Type="Self.Aluno_UC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aluno">
+        <PropertyRef Name="num_aluno" />
+      </Principal>
+      <Dependent Role="Aluno_UC">
+        <PropertyRef Name="aluno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Aluno_UC__curso__184C96B4">
+    <End Role="Curso" Type="Self.Curso" Multiplicity="0..1" />
+    <End Role="Aluno_UC" Type="Self.Aluno_UC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Curso">
+        <PropertyRef Name="curso_sigla" />
+      </Principal>
+      <Dependent Role="Aluno_UC">
+        <PropertyRef Name="curso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+error 6004: The table 'TL52D_4.dbo.Certificado' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__Certifica__aluno__1EF99443" />-->
+  <Association Name="FK__Curso__dpt__0169315C">
+    <End Role="Departamento" Type="Self.Departamento" Multiplicity="0..1" />
+    <End Role="Curso" Type="Self.Curso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamento">
+        <PropertyRef Name="dpt_sigla" />
+      </Principal>
+      <Dependent Role="Curso">
+        <PropertyRef Name="dpt" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Seccao__coordena__09FE775D">
+    <End Role="Professor" Type="Self.Professor" Multiplicity="0..1" />
+    <End Role="Seccao" Type="Self.Seccao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Professor">
+        <PropertyRef Name="prof_cc" />
+      </Principal>
+      <Dependent Role="Seccao">
+        <PropertyRef Name="coordenador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Seccao__dpt__090A5324">
+    <End Role="Departamento" Type="Self.Departamento" Multiplicity="0..1" />
+    <End Role="Seccao" Type="Self.Seccao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamento">
+        <PropertyRef Name="dpt_sigla" />
+      </Principal>
+      <Dependent Role="Seccao">
+        <PropertyRef Name="dpt" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <!--Errors Found During Generation:
+error 6004: The table 'TL52D_4.dbo.UC_Curso' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__UC_Curso__15702A09" />-->
+  <!--Errors Found During Generation:
+error 6004: The table 'TL52D_4.dbo.UC_Curso' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__UC_Curso__curso__1387E197" />-->
+  <!--Errors Found During Generation:
+error 6004: The table 'TL52D_4.dbo.UC_Curso' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__UC_Curso__semest__147C05D0" />-->
+  <!--Errors Found During Generation:
+error 6004: The table 'TL52D_4.dbo.UC_Prof' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__UC_Prof__119F9925" />-->
+  <!--Errors Found During Generation:
+error 6004: The table 'TL52D_4.dbo.UC_Prof' is referenced by a relationship, but cannot be found.
+        <Association Name="FK__UC_Prof__prof__10AB74EC" />-->
+  <Association Name="FK__Unidade_C__regen__0EC32C7A">
+    <End Role="Professor" Type="Self.Professor" Multiplicity="0..1" />
+    <End Role="Unidade_Curricular" Type="Self.Unidade_Curricular" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Professor">
+        <PropertyRef Name="prof_cc" />
+      </Principal>
+      <Dependent Role="Unidade_Curricular">
+        <PropertyRef Name="regente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="atribuirNota" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="aluno" Type="numeric" Mode="In" />
+    <Parameter Name="uc_sigla" Type="char" Mode="In" />
+    <Parameter Name="ano" Type="date" Mode="In" />
+    <Parameter Name="nota" Type="numeric" Mode="In" />
+    <Parameter Name="sigla_curso" Type="char" Mode="In" />
+  </Function>
+  <Function Name="deleteDepartamento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="sigla" Type="char" Mode="In" />
+  </Function>
+  <Function Name="fn_diagramobjects" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="int" />
+  <Function Name="inscreverAluno_UC" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="aluno" Type="numeric" Mode="In" />
+    <Parameter Name="sigla_curso" Type="char" Mode="In" />
+    <Parameter Name="ano" Type="date" Mode="In" />
+    <Parameter Name="uc_sigla" Type="char" Mode="In" />
+  </Function>
+  <Function Name="insertDepartamento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dpt_sigla" Type="char" Mode="In" />
+    <Parameter Name="desc" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="insertDepartmento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="dpt_sigla" Type="char" Mode="In" />
+    <Parameter Name="desc" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="insertUC_on_sem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="uc" Type="char" Mode="In" />
+    <Parameter Name="ano" Type="date" Mode="In" />
+    <Parameter Name="sigla_curso" Type="char" Mode="In" />
+    <Parameter Name="semestre" Type="int" Mode="In" />
+  </Function>
+  <Function Name="matricularAluno" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="aluno" Type="numeric" Mode="In" />
+    <Parameter Name="sigla_curso" Type="char" Mode="In" />
+    <Parameter Name="ano" Type="date" Mode="In" />
+  </Function>
+  <Function Name="removeUC_from_sem" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="uc" Type="char" Mode="In" />
+    <Parameter Name="sigla_curso" Type="char" Mode="In" />
+  </Function>
+  <Function Name="showUC_NoInscricao" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="ano1" Type="date" Mode="In" />
+    <Parameter Name="ano2" Type="date" Mode="In" />
+  </Function>
+  <Function Name="sp_alterdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_creatediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="version" Type="int" Mode="In" />
+    <Parameter Name="definition" Type="varbinary(max)" Mode="In" />
+  </Function>
+  <Function Name="sp_dropdiagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagramdefinition" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_helpdiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+  </Function>
+  <Function Name="sp_renamediagram" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="diagramname" Type="nvarchar" Mode="In" />
+    <Parameter Name="owner_id" Type="int" Mode="In" />
+    <Parameter Name="new_diagramname" Type="nvarchar" Mode="In" />
+  </Function>
+  <Function Name="sp_upgraddiagrams" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" />
+  <Function Name="TotalCreditos" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="true" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo" ReturnType="numeric">
+    <Parameter Name="curso" Type="char" Mode="In" />
+  </Function>
+  <Function Name="updateDepartamento" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="dbo">
+    <Parameter Name="oldSigla" Type="char" Mode="In" />
+    <Parameter Name="newSigla" Type="char" Mode="In" />
+    <Parameter Name="newDesc" Type="varchar" Mode="In" />
+  </Function>
+  <EntityContainer Name="TL52D_4ModelStoreContainer">
+    <EntitySet Name="Aluno" EntityType="Self.Aluno" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Curso" EntityType="Self.Curso" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Departamento" EntityType="Self.Departamento" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Professor" EntityType="Self.Professor" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Seccao" EntityType="Self.Seccao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Semestre" EntityType="Self.Semestre" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Unidade_Curricular" EntityType="Self.Unidade_Curricular" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Aluno_UC" EntityType="Self.Aluno_UC" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Aluno_UC].[aluno] AS [aluno], 
+    [Aluno_UC].[curso] AS [curso], 
+    [Aluno_UC].[uc] AS [uc], 
+    [Aluno_UC].[ano_letivo] AS [ano_letivo], 
+    [Aluno_UC].[ano_conclusao] AS [ano_conclusao], 
+    [Aluno_UC].[nota] AS [nota]
+    FROM [dbo].[Aluno_UC] AS [Aluno_UC]</DefiningQuery>
+    </EntitySet>
+    <AssociationSet Name="FK__Aluno_UC__1A34DF26" Association="Self.FK__Aluno_UC__1A34DF26">
+      <End Role="Unidade_Curricular" EntitySet="Unidade_Curricular" />
+      <End Role="Aluno_UC" EntitySet="Aluno_UC" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Aluno_UC__aluno__1758727B" Association="Self.FK__Aluno_UC__aluno__1758727B">
+      <End Role="Aluno" EntitySet="Aluno" />
+      <End Role="Aluno_UC" EntitySet="Aluno_UC" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Aluno_UC__curso__184C96B4" Association="Self.FK__Aluno_UC__curso__184C96B4">
+      <End Role="Curso" EntitySet="Curso" />
+      <End Role="Aluno_UC" EntitySet="Aluno_UC" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Curso__dpt__0169315C" Association="Self.FK__Curso__dpt__0169315C">
+      <End Role="Departamento" EntitySet="Departamento" />
+      <End Role="Curso" EntitySet="Curso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Seccao__coordena__09FE775D" Association="Self.FK__Seccao__coordena__09FE775D">
+      <End Role="Professor" EntitySet="Professor" />
+      <End Role="Seccao" EntitySet="Seccao" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Seccao__dpt__090A5324" Association="Self.FK__Seccao__dpt__090A5324">
+      <End Role="Departamento" EntitySet="Departamento" />
+      <End Role="Seccao" EntitySet="Seccao" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Unidade_C__regen__0EC32C7A" Association="Self.FK__Unidade_C__regen__0EC32C7A">
+      <End Role="Professor" EntitySet="Professor" />
+      <End Role="Unidade_Curricular" EntitySet="Unidade_Curricular" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

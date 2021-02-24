@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="TL52D_4ModelStoreContainer" CdmEntityContainer="TL52D_4Entities">
+    <EntitySetMapping Name="Aluno">
+      <EntityTypeMapping TypeName="TL52D_4Model.Aluno">
+        <MappingFragment StoreEntitySet="Aluno">
+          <ScalarProperty Name="num_aluno" ColumnName="num_aluno" />
+          <ScalarProperty Name="aluno_cc" ColumnName="aluno_cc" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="morada" ColumnName="morada" />
+          <ScalarProperty Name="data_nascimento" ColumnName="data_nascimento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Curso">
+      <EntityTypeMapping TypeName="TL52D_4Model.Curso">
+        <MappingFragment StoreEntitySet="Curso">
+          <ScalarProperty Name="curso_sigla" ColumnName="curso_sigla" />
+          <ScalarProperty Name="dpt" ColumnName="dpt" />
+          <ScalarProperty Name="curso_desc" ColumnName="curso_desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departamento">
+      <EntityTypeMapping TypeName="TL52D_4Model.Departamento">
+        <MappingFragment StoreEntitySet="Departamento">
+          <ScalarProperty Name="dpt_sigla" ColumnName="dpt_sigla" />
+          <ScalarProperty Name="dpt_desc" ColumnName="dpt_desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Professor">
+      <EntityTypeMapping TypeName="TL52D_4Model.Professor">
+        <MappingFragment StoreEntitySet="Professor">
+          <ScalarProperty Name="prof_cc" ColumnName="prof_cc" />
+          <ScalarProperty Name="nome" ColumnName="nome" />
+          <ScalarProperty Name="area_espec" ColumnName="area_espec" />
+          <ScalarProperty Name="categoria" ColumnName="categoria" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Seccao">
+      <EntityTypeMapping TypeName="TL52D_4Model.Seccao">
+        <MappingFragment StoreEntitySet="Seccao">
+          <ScalarProperty Name="sect_sigla" ColumnName="sect_sigla" />
+          <ScalarProperty Name="dpt" ColumnName="dpt" />
+          <ScalarProperty Name="coordenador" ColumnName="coordenador" />
+          <ScalarProperty Name="sect_desc" ColumnName="sect_desc" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Semestre">
+      <EntityTypeMapping TypeName="TL52D_4Model.Semestre">
+        <MappingFragment StoreEntitySet="Semestre">
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Unidade_Curricular">
+      <EntityTypeMapping TypeName="TL52D_4Model.Unidade_Curricular">
+        <MappingFragment StoreEntitySet="Unidade_Curricular">
+          <ScalarProperty Name="uc_sigla" ColumnName="uc_sigla" />
+          <ScalarProperty Name="ano" ColumnName="ano" />
+          <ScalarProperty Name="creditos" ColumnName="creditos" />
+          <ScalarProperty Name="uc_desc" ColumnName="uc_desc" />
+          <ScalarProperty Name="regente" ColumnName="regente" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Aluno_UC">
+      <EntityTypeMapping TypeName="TL52D_4Model.Aluno_UC">
+        <MappingFragment StoreEntitySet="Aluno_UC">
+          <ScalarProperty Name="aluno" ColumnName="aluno" />
+          <ScalarProperty Name="curso" ColumnName="curso" />
+          <ScalarProperty Name="uc" ColumnName="uc" />
+          <ScalarProperty Name="ano_letivo" ColumnName="ano_letivo" />
+          <ScalarProperty Name="ano_conclusao" ColumnName="ano_conclusao" />
+          <ScalarProperty Name="nota" ColumnName="nota" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="atribuirNota" FunctionName="TL52D_4Model.Store.atribuirNota" />
+    <FunctionImportMapping FunctionImportName="deleteDepartamento" FunctionName="TL52D_4Model.Store.deleteDepartamento" />
+    <FunctionImportMapping FunctionImportName="inscreverAluno_UC" FunctionName="TL52D_4Model.Store.inscreverAluno_UC" />
+    <FunctionImportMapping FunctionImportName="insertDepartamento" FunctionName="TL52D_4Model.Store.insertDepartamento" />
+    <FunctionImportMapping FunctionImportName="insertDepartmento" FunctionName="TL52D_4Model.Store.insertDepartmento" />
+    <FunctionImportMapping FunctionImportName="insertUC_on_sem" FunctionName="TL52D_4Model.Store.insertUC_on_sem" />
+    <FunctionImportMapping FunctionImportName="matricularAluno" FunctionName="TL52D_4Model.Store.matricularAluno" />
+    <FunctionImportMapping FunctionImportName="removeUC_from_sem" FunctionName="TL52D_4Model.Store.removeUC_from_sem" />
+    <FunctionImportMapping FunctionImportName="showUC_NoInscricao" FunctionName="TL52D_4Model.Store.showUC_NoInscricao">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TL52D_4Model.showUC_NoInscricao_Result">
+          <ScalarProperty Name="ano" ColumnName="ano" />
+          <ScalarProperty Name="uc_sigla" ColumnName="uc_sigla" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="TL52D_4Model.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="TL52D_4Model.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="TL52D_4Model.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="TL52D_4Model.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TL52D_4Model.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="TL52D_4Model.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="TL52D_4Model.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="TL52D_4Model.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="TL52D_4Model.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="updateDepartamento" FunctionName="TL52D_4Model.Store.updateDepartamento" />
+  </EntityContainerMapping>
+</Mapping>

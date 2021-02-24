@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="5c1189a6ee024912bac21256027fb21d" Name="Diagram1" ZoomLevel="59">
+        <EntityTypeShape EntityType="TL52D_4Model.Aluno" Width="1.5" PointX="17.875" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TL52D_4Model.Aluno_Curso" Width="1.5" PointX="15" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TL52D_4Model.Aluno_UC" Width="1.5" PointX="13" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TL52D_4Model.Certificado" Width="1.5" PointX="17.125" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="TL52D_4Model.Curso" Width="1.5" PointX="8.5" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TL52D_4Model.Departamento" Width="1.5" PointX="5.125" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="TL52D_4Model.Professor" Width="1.5" PointX="9.375" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TL52D_4Model.Seccao" Width="1.5" PointX="7" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TL52D_4Model.Semestre" Width="1.5" PointX="14.625" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="TL52D_4Model.UC_Curso" Width="1.5" PointX="11.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="TL52D_4Model.Unidade_Curricular" Width="1.5" PointX="12.125" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="TL52D_4Model.FK__Aluno_Cur__aluno__76B698BF" ManuallyRouted="false" />
+        <AssociationConnector Association="TL52D_4Model.FK__Aluno_UC__aluno__70FDBF69" ManuallyRouted="false" />
+        <AssociationConnector Association="TL52D_4Model.FK__Certifica__aluno__7A8729A3" ManuallyRouted="false" />
+        <AssociationConnector Association="TL52D_4Model.FK__Aluno_Cur__curso__77AABCF8" ManuallyRouted="false" />
+        <AssociationConnector Association="TL52D_4Model.FK__Aluno_UC__73DA2C14" ManuallyRouted="false" />
+        <AssociationConnector Association="TL52D_4Model.FK__Aluno_UC__curso__71F1E3A2" ManuallyRouted="false" >
+        </AssociationConnector>
+        <AssociationConnector Association="TL52D_4Model.FK__Curso__dpt__5832119F" ManuallyRouted="false" />
+        <AssociationConnector Association="TL52D_4Model.FK__UC_Curso__curso__6C390A4C" ManuallyRouted="false" />
+        <AssociationConnector Association="TL52D_4Model.FK__Seccao__dpt__5FD33367" ManuallyRouted="false" />
+        <AssociationConnector Association="TL52D_4Model.FK__Seccao__coordena__60C757A0" ManuallyRouted="false" />
+        <AssociationConnector Association="TL52D_4Model.FK__Unidade_C__regen__658C0CBD" ManuallyRouted="false" />
+        <AssociationConnector Association="TL52D_4Model.FK__UC_Curso__semest__6D2D2E85" ManuallyRouted="false" />
+        <AssociationConnector Association="TL52D_4Model.FK__UC_Curso__6E2152BE" ManuallyRouted="false" />
+        <AssociationConnector Association="TL52D_4Model.UC_Prof" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

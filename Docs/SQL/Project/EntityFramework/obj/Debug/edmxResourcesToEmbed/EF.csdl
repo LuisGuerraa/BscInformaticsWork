@@ -1,0 +1,337 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="TL52D_4Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Aluno">
+    <Key>
+      <PropertyRef Name="num_aluno" />
+    </Key>
+    <Property Name="num_aluno" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="aluno_cc" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="nome" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="morada" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="data_nascimento" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Aluno_UC" Relationship="Self.FK__Aluno_UC__aluno__1758727B" FromRole="Aluno" ToRole="Aluno_UC" />
+  </EntityType>
+  <EntityType Name="Curso">
+    <Key>
+      <PropertyRef Name="curso_sigla" />
+    </Key>
+    <Property Name="curso_sigla" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="dpt" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Name="curso_desc" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Aluno_UC" Relationship="Self.FK__Aluno_UC__curso__184C96B4" FromRole="Curso" ToRole="Aluno_UC" />
+    <NavigationProperty Name="Departamento" Relationship="Self.FK__Curso__dpt__0169315C" FromRole="Curso" ToRole="Departamento" />
+  </EntityType>
+  <EntityType Name="Departamento">
+    <Key>
+      <PropertyRef Name="dpt_sigla" />
+    </Key>
+    <Property Name="dpt_sigla" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="dpt_desc" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Curso" Relationship="Self.FK__Curso__dpt__0169315C" FromRole="Departamento" ToRole="Curso" />
+    <NavigationProperty Name="Seccao" Relationship="Self.FK__Seccao__dpt__090A5324" FromRole="Departamento" ToRole="Seccao" />
+  </EntityType>
+  <EntityType Name="Professor">
+    <Key>
+      <PropertyRef Name="prof_cc" />
+    </Key>
+    <Property Name="prof_cc" Type="String" MaxLength="12" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="nome" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="area_espec" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="categoria" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Seccao" Relationship="Self.FK__Seccao__coordena__09FE775D" FromRole="Professor" ToRole="Seccao" />
+    <NavigationProperty Name="Unidade_Curricular" Relationship="Self.FK__Unidade_C__regen__0EC32C7A" FromRole="Professor" ToRole="Unidade_Curricular" />
+  </EntityType>
+  <EntityType Name="Seccao">
+    <Key>
+      <PropertyRef Name="sect_sigla" />
+    </Key>
+    <Property Name="sect_sigla" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="dpt" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Name="coordenador" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+    <Property Name="sect_desc" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Departamento" Relationship="Self.FK__Seccao__dpt__090A5324" FromRole="Seccao" ToRole="Departamento" />
+    <NavigationProperty Name="Professor" Relationship="Self.FK__Seccao__coordena__09FE775D" FromRole="Seccao" ToRole="Professor" />
+  </EntityType>
+  <EntityType Name="Semestre">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="UC_Curso" Relationship="TL52D_4Model.SemestreUC_Curso" FromRole="Semestre" ToRole="UC_Curso" />
+  </EntityType>
+  <EntityType Name="Unidade_Curricular">
+    <Key>
+      <PropertyRef Name="uc_sigla" />
+      <PropertyRef Name="ano" />
+    </Key>
+    <Property Name="uc_sigla" Type="String" MaxLength="6" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="ano" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="creditos" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="uc_desc" Type="String" MaxLength="60" FixedLength="false" Unicode="false" />
+    <Property Name="regente" Type="String" MaxLength="12" FixedLength="true" Unicode="false" />
+    <NavigationProperty Name="Professor" Relationship="Self.FK__Unidade_C__regen__0EC32C7A" FromRole="Unidade_Curricular" ToRole="Professor" />
+    <NavigationProperty Name="Aluno_UC" Relationship="Self.FK__Aluno_UC__1A34DF26" FromRole="Unidade_Curricular" ToRole="Aluno_UC" />
+    <NavigationProperty Name="UC_Curso" Relationship="TL52D_4Model.UC_CursoUnidade_Curricular" FromRole="Unidade_Curricular" ToRole="UC_Curso" />
+  </EntityType>
+  <EntityType Name="Aluno_UC">
+    <Key>
+      <PropertyRef Name="ano_letivo" />
+    </Key>
+    <Property Name="aluno" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="curso" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Name="uc" Type="String" MaxLength="6" FixedLength="true" Unicode="false" />
+    <Property Name="ano_letivo" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="ano_conclusao" Type="DateTime" Precision="0" />
+    <Property Name="nota" Type="Decimal" Precision="18" Scale="0" />
+    <NavigationProperty Name="Aluno1" Relationship="Self.FK__Aluno_UC__aluno__1758727B" FromRole="Aluno_UC" ToRole="Aluno" />
+    <NavigationProperty Name="Curso1" Relationship="Self.FK__Aluno_UC__curso__184C96B4" FromRole="Aluno_UC" ToRole="Curso" />
+    <NavigationProperty Name="Unidade_Curricular" Relationship="Self.FK__Aluno_UC__1A34DF26" FromRole="Aluno_UC" ToRole="Unidade_Curricular" />
+  </EntityType>
+  <Association Name="FK__Aluno_UC__aluno__1758727B">
+    <End Role="Aluno" Type="Self.Aluno" Multiplicity="0..1" />
+    <End Role="Aluno_UC" Type="Self.Aluno_UC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Aluno">
+        <PropertyRef Name="num_aluno" />
+      </Principal>
+      <Dependent Role="Aluno_UC">
+        <PropertyRef Name="aluno" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Aluno_UC__curso__184C96B4">
+    <End Role="Curso" Type="Self.Curso" Multiplicity="0..1" />
+    <End Role="Aluno_UC" Type="Self.Aluno_UC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Curso">
+        <PropertyRef Name="curso_sigla" />
+      </Principal>
+      <Dependent Role="Aluno_UC">
+        <PropertyRef Name="curso" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Curso__dpt__0169315C">
+    <End Role="Departamento" Type="Self.Departamento" Multiplicity="0..1" />
+    <End Role="Curso" Type="Self.Curso" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamento">
+        <PropertyRef Name="dpt_sigla" />
+      </Principal>
+      <Dependent Role="Curso">
+        <PropertyRef Name="dpt" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Seccao__dpt__090A5324">
+    <End Role="Departamento" Type="Self.Departamento" Multiplicity="0..1" />
+    <End Role="Seccao" Type="Self.Seccao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Departamento">
+        <PropertyRef Name="dpt_sigla" />
+      </Principal>
+      <Dependent Role="Seccao">
+        <PropertyRef Name="dpt" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Seccao__coordena__09FE775D">
+    <End Role="Professor" Type="Self.Professor" Multiplicity="0..1" />
+    <End Role="Seccao" Type="Self.Seccao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Professor">
+        <PropertyRef Name="prof_cc" />
+      </Principal>
+      <Dependent Role="Seccao">
+        <PropertyRef Name="coordenador" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Unidade_C__regen__0EC32C7A">
+    <End Role="Professor" Type="Self.Professor" Multiplicity="0..1" />
+    <End Role="Unidade_Curricular" Type="Self.Unidade_Curricular" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Professor">
+        <PropertyRef Name="prof_cc" />
+      </Principal>
+      <Dependent Role="Unidade_Curricular">
+        <PropertyRef Name="regente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Aluno_UC__1A34DF26">
+    <End Role="Unidade_Curricular" Type="Self.Unidade_Curricular" Multiplicity="0..1" />
+    <End Role="Aluno_UC" Type="Self.Aluno_UC" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Unidade_Curricular">
+        <PropertyRef Name="uc_sigla" />
+        <PropertyRef Name="ano" />
+      </Principal>
+      <Dependent Role="Aluno_UC">
+        <PropertyRef Name="uc" />
+        <PropertyRef Name="ano_letivo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="TL52D_4Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Aluno" EntityType="Self.Aluno" />
+    <EntitySet Name="Curso" EntityType="Self.Curso" />
+    <EntitySet Name="Departamento" EntityType="Self.Departamento" />
+    <EntitySet Name="Professor" EntityType="Self.Professor" />
+    <EntitySet Name="Seccao" EntityType="Self.Seccao" />
+    <EntitySet Name="Semestre" EntityType="Self.Semestre" />
+    <EntitySet Name="Unidade_Curricular" EntityType="Self.Unidade_Curricular" />
+    <EntitySet Name="Aluno_UC" EntityType="Self.Aluno_UC" />
+    <AssociationSet Name="FK__Aluno_UC__aluno__1758727B" Association="Self.FK__Aluno_UC__aluno__1758727B">
+      <End Role="Aluno" EntitySet="Aluno" />
+      <End Role="Aluno_UC" EntitySet="Aluno_UC" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Aluno_UC__curso__184C96B4" Association="Self.FK__Aluno_UC__curso__184C96B4">
+      <End Role="Curso" EntitySet="Curso" />
+      <End Role="Aluno_UC" EntitySet="Aluno_UC" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Curso__dpt__0169315C" Association="Self.FK__Curso__dpt__0169315C">
+      <End Role="Departamento" EntitySet="Departamento" />
+      <End Role="Curso" EntitySet="Curso" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Seccao__dpt__090A5324" Association="Self.FK__Seccao__dpt__090A5324">
+      <End Role="Departamento" EntitySet="Departamento" />
+      <End Role="Seccao" EntitySet="Seccao" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Seccao__coordena__09FE775D" Association="Self.FK__Seccao__coordena__09FE775D">
+      <End Role="Professor" EntitySet="Professor" />
+      <End Role="Seccao" EntitySet="Seccao" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Unidade_C__regen__0EC32C7A" Association="Self.FK__Unidade_C__regen__0EC32C7A">
+      <End Role="Professor" EntitySet="Professor" />
+      <End Role="Unidade_Curricular" EntitySet="Unidade_Curricular" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Aluno_UC__1A34DF26" Association="Self.FK__Aluno_UC__1A34DF26">
+      <End Role="Unidade_Curricular" EntitySet="Unidade_Curricular" />
+      <End Role="Aluno_UC" EntitySet="Aluno_UC" />
+    </AssociationSet>
+    <FunctionImport Name="atribuirNota">
+      <Parameter Name="aluno" Mode="In" Type="Decimal" />
+      <Parameter Name="uc_sigla" Mode="In" Type="String" />
+      <Parameter Name="ano" Mode="In" Type="DateTime" />
+      <Parameter Name="nota" Mode="In" Type="Decimal" />
+      <Parameter Name="sigla_curso" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="deleteDepartamento">
+      <Parameter Name="sigla" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="inscreverAluno_UC">
+      <Parameter Name="aluno" Mode="In" Type="Decimal" />
+      <Parameter Name="sigla_curso" Mode="In" Type="String" />
+      <Parameter Name="ano" Mode="In" Type="DateTime" />
+      <Parameter Name="uc_sigla" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="insertDepartamento">
+      <Parameter Name="dpt_sigla" Mode="In" Type="String" />
+      <Parameter Name="desc" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="insertDepartmento">
+      <Parameter Name="dpt_sigla" Mode="In" Type="String" />
+      <Parameter Name="desc" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="insertUC_on_sem">
+      <Parameter Name="uc" Mode="In" Type="String" />
+      <Parameter Name="ano" Mode="In" Type="DateTime" />
+      <Parameter Name="sigla_curso" Mode="In" Type="String" />
+      <Parameter Name="semestre" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="matricularAluno">
+      <Parameter Name="aluno" Mode="In" Type="Decimal" />
+      <Parameter Name="sigla_curso" Mode="In" Type="String" />
+      <Parameter Name="ano" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="removeUC_from_sem">
+      <Parameter Name="uc" Mode="In" Type="String" />
+      <Parameter Name="sigla_curso" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="showUC_NoInscricao" ReturnType="Collection(TL52D_4Model.showUC_NoInscricao_Result)">
+      <Parameter Name="ano1" Mode="In" Type="DateTime" />
+      <Parameter Name="ano2" Mode="In" Type="DateTime" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(TL52D_4Model.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(TL52D_4Model.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="updateDepartamento">
+      <Parameter Name="oldSigla" Mode="In" Type="String" />
+      <Parameter Name="newSigla" Mode="In" Type="String" />
+      <Parameter Name="newDesc" Mode="In" Type="String" />
+    </FunctionImport>
+    <EntitySet Name="UC_Curso" EntityType="TL52D_4Model.UC_Curso" />
+    <AssociationSet Name="UC_CursoUnidade_Curricular" Association="TL52D_4Model.UC_CursoUnidade_Curricular">
+      <End Role="UC_Curso" EntitySet="UC_Curso" />
+      <End Role="Unidade_Curricular" EntitySet="Unidade_Curricular" />
+    </AssociationSet>
+    <AssociationSet Name="SemestreUC_Curso" Association="TL52D_4Model.SemestreUC_Curso">
+      <End Role="Semestre" EntitySet="Semestre" />
+      <End Role="UC_Curso" EntitySet="UC_Curso" />
+    </AssociationSet>
+  </EntityContainer>
+  <ComplexType Name="showUC_NoInscricao_Result">
+    <Property Type="DateTime" Name="ano" Nullable="true" />
+    <Property Type="String" Name="uc_sigla" Nullable="true" MaxLength="6" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <EntityType Name="UC_Curso">
+    <Key>
+      <PropertyRef Name="uc" />
+      <PropertyRef Name="curso" />
+      <PropertyRef Name="semestre" />
+    </Key>
+    <Property Name="uc" Type="String" Nullable="false" annotation:StoreGeneratedPattern="None" />
+    <Property Name="ano" Type="String" Nullable="false" />
+    <Property Name="curso" Type="String" Nullable="false" />
+    <Property Name="semestre" Type="String" Nullable="false" />
+    <NavigationProperty Name="Unidade_Curricular" Relationship="TL52D_4Model.UC_CursoUnidade_Curricular" FromRole="UC_Curso" ToRole="Unidade_Curricular" />
+    <NavigationProperty Name="Semestre" Relationship="TL52D_4Model.SemestreUC_Curso" FromRole="UC_Curso" ToRole="Semestre" />
+  </EntityType>
+  <Association Name="UC_CursoUnidade_Curricular">
+    <End Type="TL52D_4Model.UC_Curso" Role="UC_Curso" Multiplicity="*" />
+    <End Type="TL52D_4Model.Unidade_Curricular" Role="Unidade_Curricular" Multiplicity="*" />
+  </Association>
+  <Association Name="SemestreUC_Curso">
+    <End Type="TL52D_4Model.Semestre" Role="Semestre" Multiplicity="*" />
+    <End Type="TL52D_4Model.UC_Curso" Role="UC_Curso" Multiplicity="*" />
+  </Association>
+</Schema>
