@@ -2,8 +2,8 @@
 
 This application has the objetive of controlling the entrances and exits of workers in a company. When you enter the company you register on the device stating an ID and a password.
 If they are correctly inputed the program identfies you, shows you your entrance hours and opens the door for you. When the worker leaves, he inserts the same data and the program
-shows the entrance hour, the exit hour and the total time that the worker was on the building controlling the workers.
-In the code we can choose to run it on the original hardware specified on the report or run on a interface built in java as an hardware simulation.
+shows the entrance hour, the exit hour and the total time that the worker was on the building.
+In the code we can choose to run it on the original hardware specified on the report or run it on an interface built in java as an hardware simulation.
 Hardware programming was done trough WinCUPL in order to configure the keyboard, lcd display, ATB (shown below in some pictures) and all the interactions between them.
 
 ### Here are some photos regarding the hardware used and their connections:
