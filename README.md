@@ -1,12 +1,12 @@
 # My Work
 
 ## Brief overview
-Hey! Welcome to my repository where i show you some of my projects done in the context of [Computer Science and Engineering](https://isel.pt/cursos/licenciaturas/engenharia-informatica-e-de-computadores) programme at [ISEL](https://isel.pt/). The following examples of projects are not all i've done but are the most fun and interactive that i did. In addition to these projects i also worked on projects that were developed in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/)([CLI](https://en.wikipedia.org/wiki/Common_Language_Infrastructure),[CLR](https://en.wikipedia.org/wiki/Common_Language_Runtime), [CIL](https://en.wikipedia.org/wiki/Common_Intermediate_Language) and .NET), [Assembly x86](https://en.wikipedia.org/wiki/X86_assembly_language), [Matlab](https://www.mathworks.com/products/matlab.html), [C](https://en.wikipedia.org/wiki/C_(programming_language)), [C++](https://en.wikipedia.org/wiki/C%2B%2B) and [SQL](https://en.wikipedia.org/wiki/SQL). Assembly x86 code was written and executed on PDS16, an experimental processor provided by ISEL.
-In the "Docs" folder you can find some of other course's coding (specified in each sub-folder) as well as some reports of more theoritical courses.
+Hey! Welcome to my repository where I show you some of my projects done in the context of [Computer Science and Engineering](https://isel.pt/cursos/licenciaturas/engenharia-informatica-e-de-computadores) degree at [ISEL](https://isel.pt/). The following examples of projects are not all i've done but are the most fun and interactive that i did. In addition to these projects i also worked on projects that were developed in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/)([CLI](https://en.wikipedia.org/wiki/Common_Language_Infrastructure),[CLR](https://en.wikipedia.org/wiki/Common_Language_Runtime), [CIL](https://en.wikipedia.org/wiki/Common_Intermediate_Language) and .NET), [Assembly x86](https://en.wikipedia.org/wiki/X86_assembly_language), [Matlab](https://www.mathworks.com/products/matlab.html), [C](https://en.wikipedia.org/wiki/C_(programming_language)), [C++](https://en.wikipedia.org/wiki/C%2B%2B) and [SQL](https://en.wikipedia.org/wiki/SQL). Assembly x86 code was written and executed on PDS16, an experimental processor provided by ISEL.
+In the "Docs" folder you can find some of other course's coding (specified in each sub-folder) as well as some reports of more theorical courses.
 
 Hope you enjoy! If you have any concerns or questions don't hesitate to reach me!
 
-## Some apps developed by me and some colleagues throughout the course:
+## Some software projects developed throughout the course:
 
 | Project        | Year  / Semester        | Course  | Technologies
 | -------------  |:-------------:|-------------|------------|
@@ -30,8 +30,8 @@ Hope you enjoy! If you have any concerns or questions don't hesitate to reach me
 | Programming       | Introduction to Programming      | Informatics     |  Java            |  1/1             |
 | Logic and Digital Systems       | Logic operations and microchip programming       | Informatics     | WinCupl             |  1/1             |
 | Electronics       | Electric components and connections      |  Informatics    |   LTspice/Laboratory   |  1/1             |
-| Algebra      | Study of mathematical symbols      | Maths     | -------- |     1/1          |
-| Mathematics I      |  Math functions and operations     | Maths      |  --------   |       1/1        |
+| Algebra      | Study of mathematical symbols      | Maths     | --------- |     1/1          |
+| Mathematics I      |  Math functions and operations     | Maths      |  ---------   |       1/1        |
 | | | | | |
 | OOP    |  Object-Oriented Programming     | Informatics     | Java              |  1/2             |
 | Computer Architecture     | Assembly and architectural features       |  Informatics    |   Hardware/Assembly           | 1/2              |
