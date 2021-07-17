@@ -8,14 +8,17 @@ Hope you enjoy! If you have any concerns or questions don't hesitate to reach me
 
 ## Some apps developed by me and some colleagues throughout the course:
 
-### 1st semester -> 2048 & 4InARow ([Java](https://www.java.com))
-### 2nd semester -> WorkingTimeRecorder ([Java](https://www.java.com) and [WinCupl](https://www.microchip.com/en-us/products/fpgas-and-plds/spld-cplds/pld-design-resources))
-### 3rd semester -> Boardstar ([Java](https://www.java.com))
-### 4th semester -> University Manager ([Java](https://www.java.com) and deployed on [Heroku](https://www.heroku.com/))
-### 5th semester -> COTA & CIBORG ([JavaScript](https://javascript.info/) with [Node.js](https://nodejs.org/en/) on the server-side and [HTML](https://wikipedia.org/wiki/HTML)/[CSS](https://wikipedia.org/wiki/Cascading_Style_Sheets) on the front-side)
-### 5th semester -> Drag ([Android](https://developer.android.com/) framework)
-### 6th semester -> Projects Manager ([Kotlin](https://kotlinlang.org/) with [Spring](https://spring.io/) on the server-side and [React.js](https://reactjs.org/) on the front-side)
-
+| Project        | Year  / Semester        | Course  | Technologies
+| -------------  |:-------------:|-------------|------------|
+| 2048      	| 1 / 1| Programming | _Java_ |
+| 4InARow      	| 1 / 1| Programming | _Java_ |
+| Working Time Recorder | 1 / 2| Computer Informatics Lab | _Java_; _WinCUPL_; _Hardware (Microchip)_ |
+| University Manager | 2 / 2 | Software Lab | _Java_; _SQL Server_ |
+| Boardstar 	| 2 / 2| Functional Programming (Design Patterns) | _Java_ |
+| Ciborg| 3 / 1 | Web Programming | _Javascript_; _NodeJS_; _HTML_; _Bootstrap_ |
+| COTA 	| 3 / 1| Web Programming | _Javascript_; _NodeJS_; _HTML_; _Bootstrap_ |
+| DRAG | 3 / 2 | Android Development | _Kotlin_;  |
+| Projects Manager | 3 / 2 | Web App Development | _Kotlin_; _SpringMVC_; _ReactJS_; _PostgreSQL_  |
 
 
 
