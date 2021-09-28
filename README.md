@@ -1,10 +1,17 @@
 # My Work
 
 ## Brief overview
-Hey! Welcome to my repository where I show you some of my projects done in the context of [Computer Science and Engineering](https://isel.pt/cursos/licenciaturas/engenharia-informatica-e-de-computadores) degree at [ISEL](https://isel.pt/). The following examples of projects are not all i've done but are the most fun and interactive that i did. In addition to these projects i also worked on projects that were developed in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/)([CLI](https://en.wikipedia.org/wiki/Common_Language_Infrastructure),[CLR](https://en.wikipedia.org/wiki/Common_Language_Runtime), [CIL](https://en.wikipedia.org/wiki/Common_Intermediate_Language) and .NET), [Assembly x86](https://en.wikipedia.org/wiki/X86_assembly_language), [Matlab](https://www.mathworks.com/products/matlab.html), [C](https://en.wikipedia.org/wiki/C_(programming_language)), [C++](https://en.wikipedia.org/wiki/C%2B%2B) and [SQL](https://en.wikipedia.org/wiki/SQL). Assembly x86 code was written and executed on PDS16, an experimental processor provided by ISEL.
-In the "Docs" folder you can find some of other course's coding (specified in each sub-folder) as well as some reports of more theorical courses.
+Hey! Welcome to my repository where I show you some of my projects done in the context of [Computer Science and Engineering](https://isel.pt/cursos/licenciaturas/engenharia-informatica-e-de-computadores) degree at [ISEL](https://isel.pt/). 
 
-Hope you enjoy! If you have any concerns or questions don't hesitate to reach me!
+The following examples of projects are not all I've done but are the most fun and interactive that I did. 
+
+In addition to these projects I also worked on projects that were developed in [C#](https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/)([CLI](https://en.wikipedia.org/wiki/Common_Language_Infrastructure),[CLR](https://en.wikipedia.org/wiki/Common_Language_Runtime), [CIL](https://en.wikipedia.org/wiki/Common_Intermediate_Language) and .NET), [Assembly x86](https://en.wikipedia.org/wiki/X86_assembly_language), [Matlab](https://www.mathworks.com/products/matlab.html), [C](https://en.wikipedia.org/wiki/C_(programming_language)), [C++](https://en.wikipedia.org/wiki/C%2B%2B) and [SQL](https://en.wikipedia.org/wiki/SQL). Assembly x86 code was written and executed on PDS16, an experimental processor provided by ISEL.
+
+For the final project, a nursing home care system was developed. It includes a web app (React), a mobile app (React Native),  a Web API (C# .NET), a Machine Learning component (Python/Pytorch) and a notifications module (Pusher). All contents of this project including documents, reports, user manuals, links to the repos used and to the apps deployed are acessible through [SALI](https://www.sali.social/).
+
+In the "Docs" folder you can find some of other course's coding (specified in each sub-folder) as well as some reports of theorical courses.
+
+Hope you enjoy! If you have any questions don't hesitate to reach me!
 
 ## Some software projects developed throughout the course:
 
@@ -19,6 +26,8 @@ Hope you enjoy! If you have any concerns or questions don't hesitate to reach me
 | COTA 	| 3 / 1| Web Programming | _Javascript_; _NodeJS_; _HTML_; _Bootstrap_ |
 | DRAG | 3 / 2 | Android Development | _Kotlin_;  |
 | Projects Manager | 3 / 2 | Web App Development | _Kotlin_; _SpringMVC_; _ReactJS_; _PostgreSQL_  |
+| -------------  |-------------|-------------|------------|
+| [SALI](https://www.sali.social/) | 3 / 2 | Final Project / Full System Solution | _React_; _React Native_; _.NetCore(C#)_; _Python_  |
 
 
 
@@ -40,7 +49,7 @@ Hope you enjoy! If you have any concerns or questions don't hesitate to reach me
 | Mathmatics II       |  Maths logical problem solving      | Maths     | --------  | 1/2              |
 | | | | | |
 | Computer Systems Programming      | Understanding the execution model of programs      | Informatics      | C/Assembly x86             | 2/1              |
-| Communications       | Signal learning,reproduction and manipulation     | Digital Comunication     |  Matlab/Laboratory            | 2/1               |
+| Communications       | Signal learning, reproduction and manipulation     | Digital Comunication     |  Matlab/Laboratory            | 2/1               |
 | Information Systems I|Database Learning|Informatics|SQL/C#|2/1|
 | Algorithims | Algorithims and Data Structures | Informatics | Java | 2/1 |
 | Managment | Planification and managing a company  | Business |--------- | 2/1 |
