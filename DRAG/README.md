@@ -1,5 +1,15 @@
 # DRAG DRaw And Guess  
-<br/> 
+
+## Here are some prints of the game UI:
+<table>
+  <tr>
+    <th><img src="https://user-images.githubusercontent.com/47901412/140093921-d32e65c2-c989-43e6-9c9c-14c474a9bd43.jpg" alt="home" width="200"/></th>
+    <th><img src="https://user-images.githubusercontent.com/47901412/140093991-4430bc7b-d7f0-41a1-a316-e2b98827d8e8.jpg" alt="mode" width="200"/></th>
+    <th><img src="https://user-images.githubusercontent.com/47901412/140094027-37bdf3df-d9b1-4260-974a-d90fe6cb78b0.jpg" alt="settings" width="200"/></th>
+    <th><img src="https://user-images.githubusercontent.com/47901412/140094054-7ad40481-f622-4e25-add8-98ef4ab75a5a.jpg" alt="draw" width="200"/></th>
+    <th><img src="https://user-images.githubusercontent.com/47901412/140094068-8267c2d0-f4ed-47e4-8467-52f109b3cc5a.jpg" alt="guess" width="200"/></th>
+  </tr>
+</table>
 
 ## Estrutura da nossa Aplicação DRAG
 
@@ -10,6 +20,7 @@
 
 Inicialmente quando o utilizador abre a aplicação é iniciada a atividade SplashActivity. 
 <br/>
+
 
 ## *SplashActivity*
 
