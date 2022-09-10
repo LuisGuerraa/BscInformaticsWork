@@ -27,7 +27,7 @@ Hope you enjoy! If you have any questions don't hesitate to reach me!
 | DRAG | 3 / 2 | Android Development | _Kotlin_;  |
 | Projects Manager | 3 / 2 | Web App Development | _Kotlin_; _SpringMVC_; _ReactJS_; _PostgreSQL_  |
 | -------------  |-------------|-------------|------------|
-| [SALI](https://www.sali.social/) | 3 / 2 | Final Project / Full System Solution | _React_; _React Native_; _.NetCore(C#)_; _Python_  |
+| [SALI](https://www.sali.pt/) | 3 / 2 | Final Project / Full System Solution | _React_; _React Native_; _.NetCore(C#)_; _Python_  |
 
 
 
